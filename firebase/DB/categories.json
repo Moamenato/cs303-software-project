@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "675ce9d0653238ff94ebde4f"
+  },
+  "name": "Laptop",
+  "description": "A laptop is a portable computer that can be easily carried around.",
+  "createdAt": {
+    "$date": "2024-12-14T02:13:36.130Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cea24653238ff94ebde52"
+  },
+  "name": "Bundles",
+  "description": "A bundled software system is a collection of multiple software programs packaged together and sold or provided as a single unit, often at a discounted price or as part of a hardware purchase.",
+  "createdAt": {
+    "$date": "2024-12-14T02:15:00.867Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cea5e653238ff94ebde56"
+  },
+  "name": "Monitors",
+  "description": "A computer monitor is an output device that displays information in pictorial or textual form.",
+  "createdAt": {
+    "$date": "2024-12-14T02:15:58.546Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cea85653238ff94ebde59"
+  },
+  "name": "Cases",
+  "description": "A computer case, also known as a computer chassis, is the enclosure that contains most of the hardware of a personal computer.",
+  "createdAt": {
+    "$date": "2024-12-14T02:16:37.915Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cea9e653238ff94ebde5c"
+  },
+  "name": "CPU",
+  "description": "The CPU, also referred to as the “central” or “main” processor, is a complex set of electronic circuitry that runs the machine's operating system and apps.",
+  "createdAt": {
+    "$date": "2024-12-14T02:17:02.617Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cead9653238ff94ebde5f"
+  },
+  "name": "Hard",
+  "description": "A computer hard drive is a physical data storage device that stores digital information.",
+  "createdAt": {
+    "$date": "2024-12-14T02:18:01.188Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675ceaf8653238ff94ebde62"
+  },
+  "name": "Power Supply",
+  "description": "A power supply is an electrical device that supplies electric power to an electrical load.",
+  "createdAt": {
+    "$date": "2024-12-14T02:18:32.571Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675ceb2a653238ff94ebde7d"
+  },
+  "name": "Motherboard",
+  "description": "A motherboard is the main printed circuit board (PCB) in a computer.",
+  "createdAt": {
+    "$date": "2024-12-14T02:19:22.769Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675ceb47653238ff94ebde80"
+  },
+  "name": "Accessories",
+  "description": "Computer accessories are also known as computer peripherals and can include printers and scanners and storage devices.",
+  "createdAt": {
+    "$date": "2024-12-14T02:19:51.719Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675ceb68653238ff94ebde83"
+  },
+  "name": "GPU",
+  "description": "The graphics processing unit (GPU) in your device helps handle graphics-related work like graphics, effects, and videos.",
+  "createdAt": {
+    "$date": "2024-12-14T02:20:24.362Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8969a712e8dac8538d49"
+  },
+  "name": "RAM",
+  "description": "RAM is a common computing acronym that stands for random-access memory. Sometimes it's called PC memory or just memory.",
+  "createdAt": {
+    "$date": "2024-12-14T13:34:33.441Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,1302 @@
+[{
+  "_id": {
+    "$oid": "675cedeb653238ff94ebde8f"
+  },
+  "title": "ASUS TUF Gaming A15",
+  "description": "ASUS TUF Gaming A15 FA506NCR-HN007W Gaming Laptop — AMD R7 7435HS, 8GB RAM, 512GB SSD, RTX 3050 4GB, 15.6 FHD 144Hz Win11, Graphite Black - 90NR0JV7-M001T0",
+  "price": 39500,
+  "stock": 50,
+  "tags": [
+    "ASUS TUF Gaming A15 FA506NCR-HN007W",
+    "AMD Ryzen 7 7435HS",
+    "8GB RAM",
+    "512GB SSD",
+    "GeForce RTX 3050 4GB",
+    "15.6-inch FHD 144Hz display",
+    "Windows 11",
+    "Graphite Black",
+    "gaming laptop",
+    "high-performance laptop",
+    "90NR0JV7-M001T0"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675ceedb653238ff94ebde96"
+  },
+  "title": "ASUS Strix SCAR 18",
+  "description": "ASUS Strix SCAR 18 (2024) — CORE i9-14900HX - 32GB DDR5 - 1TB SSD - RTX 4080 12G - 18 Inch - 240Hz - Win 11- ROG Backpack",
+  "price": 130500,
+  "stock": 0,
+  "tags": [
+    "ASUS",
+    "Strix",
+    "SCAR 18 (2024)",
+    "CORE i9 14900HX",
+    "32GB DDR5",
+    "1TB SSD",
+    "RTX 4080 12GB",
+    "18 Inch",
+    "240Hz",
+    "Windows 11",
+    "ROG Backpack"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cef53653238ff94ebde99"
+  },
+  "title": "XPG 15.6 XENIA Xe Gaming",
+  "description": "XPG 15.6 XENIA Xe Gaming Lifestyle Ultrabook Intel EVO Core i5-1135G7 8GB DDR4 4266 Intel Iris Xe FHD Touch 1TB SSD Windows 10 Home",
+  "price": 22500,
+  "stock": 10,
+  "tags": [
+    "XENIAXe15TI5G11GXELX-SGCUS",
+    "Laptop",
+    "XPG"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675ceffe653238ff94ebde9c"
+  },
+  "title": "DELL G15 5511",
+  "description": "DELL G15 5511 Core I7 11800H 16GB 512GB SSD RTX 3050 15.6 FHD",
+  "price": 3400,
+  "stock": 50,
+  "tags": [
+    "DELL",
+    "G15",
+    "5511",
+    "Core I7 11800H",
+    "16GB",
+    "512GB SSD",
+    "RTX 3050",
+    "15.6 FHD",
+    "G15 5511",
+    "Laptop"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cf2af0e9b97d7985d3fe0"
+  },
+  "title": "Powered by AORUS: Build #8",
+  "description": "Motherboard: AORUS Z790 PRO X DDR5, CPU: Intel Core i9-14900KF, RAM: PATRIOT 128GB DDR5 6000MHz RGB (4x32GB), Graphics Card: GIGABYTE RTX 4080 SUPER GAMING OC, Case: COOLER MASTER HAF 500 White, PSU: AORUS 1000W Elite Full Modular Platinum White, Storage: AORUS 2TB Gen4 NVMe (12,000MB/s), CPU Cooler: AORUS 360 Waterforce X ARGB White",
+  "price": 163999,
+  "stock": 5,
+  "tags": [
+    "AORUS Z790 Pro X DDR5",
+    "Intel Core i9-14900KF",
+    "Patriot 128GB DDR5-6000 RGB (4x32GB)",
+    "GIGABYTE RTX 4080 Super Gaming OC",
+    "Cooler Master HAF 500 White",
+    "AORUS 1000W Elite Full Modular Platinum White PSU",
+    "AORUS 2TB Gen4 NVMe SSD (12000MB/s)",
+    "AORUS 360 Waterforce X ARGB White",
+    "Powered by AORUS",
+    "Build #8"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cf3a7e6789be7be75fe6f"
+  },
+  "title": "PBA #18",
+  "description": "Processor: AMD RYZEN 7 7800X3D, Motherboard: ASUS ROG STRIX X670E-A GAMING, Memory: XPG 32GB DDR5 2x16 LANCER P6400 RGB WHITE, Storage: XPG S70 NVME 1TB, Graphics Card: ASUS ROG STRIX GEFORCE RTX 4070 TI 12GB GDDR6X OC EDITION, Cooling: ASUS ROG RYUO III 360 LED DISPLAY WHITE, Case: ASUS TUF GAMING GT502 PLUS PC CASE, Power Supply: XPG COREREACTOR II 850W 100% JAPANESE CAPACITORS",
+  "price": 140999,
+  "stock": 0,
+  "tags": [
+    "AMD",
+    "RYZEN77800X3D",
+    "ASUS",
+    "ROGSTRIXX670EAGAMING",
+    "XPG",
+    "32GDDR5",
+    "2X16",
+    "LANCERP6400",
+    "RGBWHITE",
+    "XPGS70NVME",
+    "1TB",
+    "ROGSTRIXGEFORCERTXT4070TI",
+    "12GB",
+    "GDDR6X",
+    "OCEDITION",
+    "ROGRYUOIII360",
+    "LEDDISPLAYWHITE",
+    "TUFGAMINGGT502PLUS"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cf4b06a853de4c6cff4f0"
+  },
+  "title": "ASUS TUF Gaming VG279QM1A",
+  "description": "ASUS TUF Gaming VG279QM1A Gaming Monitor – 27-inch, Full HD(1920x1080), 280Hz(OC), Fast IPS, ELMB Sync, 1ms (GTG), Freesync Premium, G-Sync compatible, Variable Overdrive, 100% sRGB, HDR",
+  "price": 15999,
+  "stock": 50,
+  "tags": [
+    "ASUS TUF Gaming VG279QM1A",
+    "27-inch gaming monitor",
+    "Full HD 1920x1080",
+    "280Hz refresh rate",
+    "Fast IPS",
+    "1ms GTG response time",
+    "ELMB Sync",
+    "FreeSync Premium",
+    "G-Sync compatible",
+    "Variable Overdrive",
+    "100% sRGB",
+    "HDR support",
+    "esports monitor",
+    "high-speed display"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cf4fcb1fccc1a6a75e8a1"
+  },
+  "title": "PHILIPS Evnia",
+  "description": "PHILIPS Evnia 27M2N3200S — 27 inch FHD gaming monitor, 180Hz , 0.5ms, FreeSync Premium, G-Sync, 1920x1080, HDMI 2.0, DisplayPort 1.4",
+  "price": 8750,
+  "stock": 12,
+  "tags": [
+    "PHILIPS Evnia 27M2N3200S",
+    "27-inch FHD gaming monitor",
+    "180Hz refresh rate",
+    "0.5ms response time",
+    "FreeSync Premium",
+    "G-Sync compatible",
+    "1080p resolution",
+    "HDMI 2.0",
+    "DisplayPort 1.4",
+    "low input lag"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cf5528b0ea44f71787f48"
+  },
+  "title": "ASUS ROG Strix",
+  "description": "ASUS ROG Strix XG27UCS 27 Inch 4K HDR400 USB-C Gaming Monitor–UHD (3840 x 2160), 160Hz, 1ms, Fast IPS,130% sRGB,Extreme Low Motion Blur Sync, G-Sync Compatible, DisplayWidget, Tripod socket",
+  "price": 32000,
+  "stock": 19,
+  "tags": [
+    "ASUS",
+    "ROG",
+    "Strix",
+    "XG27UCS",
+    "27 Inch",
+    "4K",
+    "HDR400",
+    "USB-C",
+    "Gaming Monitor",
+    "UHD (3840 x 2160)",
+    "160Hz",
+    "1ms",
+    "Fast IPS",
+    "130% sRGB",
+    "Extreme Low Motion Blur Sync",
+    "G-Sync Compatible",
+    "DisplayWidget",
+    "Tripod Socket"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cf5c19707aecaf5e739fe"
+  },
+  "title": "GIGABYTE M32U-AE",
+  "description": "GIGABYTE M32U-AE Arm Edition 32 Inch — 144Hz UHD KVM IPS Gaming Monitor 3840 x 2160 4k SS 1ms (GTG) 90% DCI-P3, HDR Ready, FreeSync Premium Pro, Height, Tilt, Pivot, Depth Adjustable,DisplayPort 1.4, HDMI",
+  "price": 41900,
+  "stock": 0,
+  "tags": [
+    "GIGABYTE M32U-AE",
+    "32 Inch",
+    "144Hz",
+    "UHD",
+    "KVM",
+    "IPS",
+    "Gaming Monitor",
+    "3840 x 2160",
+    "4k",
+    "1ms GTG",
+    "90% DCI-P3",
+    "HDR Ready",
+    "FreeSync Premium Pro",
+    "Height Adjustable",
+    "Tilt Adjustable",
+    "Pivot Adjustable",
+    "Depth Adjustable",
+    "DisplayPort 1.4",
+    "HDMI"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cf6c5255668ff4b2cc0eb"
+  },
+  "title": "GAMDIAS ATHENA",
+  "description": "GAMDIAS ATHENA M6 LITE 4x ARGB Fans White — Triple-sided Underglow, Mesh Front Panel, Magnetic Dust Filter, Sync with Motherboard",
+  "price": 2850,
+  "stock": 12,
+  "tags": [
+    "GAMDIAS ATHENA M6 LITE 4x ARGB Fans",
+    "Triple-sided Underglow",
+    "Mesh Front Panel",
+    "Magnetic Dust Filter",
+    "Sync with Motherboard",
+    "Gaming PC Case with and RGB Lighting",
+    "White"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cf708c0aa7e8fbd037da5"
+  },
+  "title": "GAMDIAS ATHENA M6",
+  "description": "GAMDIAS ATHENA M6 LITE 4x ARGB Fans — Triple-sided Underglow, Mesh Front Panel, Magnetic Dust Filter, Sync with Motherboard",
+  "price": 2600,
+  "stock": 50,
+  "tags": [
+    "GAMDIAS ATHENA M6 LITE 4x ARGB Fans",
+    "Triple-sided Underglow",
+    "Mesh Front Panel",
+    "Magnetic Dust Filter",
+    "Sync with Motherboard",
+    "Gaming PC Case with and RGB Lighting",
+    "White"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cf7474791ef87df1a0317"
+  },
+  "title": "XIGMATEK Vision Pro",
+  "description": "XIGMATEK Vision Pro 8 ARGB FANS — EATX, U3x2 & Type C, 3PCS TG, 1PC G24A+7PCS G24A Reverse+ARGB LED Fan Control Panel",
+  "price": 7900,
+  "stock": 5,
+  "tags": [
+    "XIGMATEK Vision Pro",
+    "8 ARGB fans",
+    "EATX case",
+    "full tower",
+    "USB 3.0 ports",
+    "Type-C",
+    "tempered glass panels",
+    "3PCS TG",
+    "G24A fan",
+    "7 G24A reverse fans",
+    "RGB lighting",
+    "ARGB fan control",
+    "high airflow case",
+    "gaming PC chassis",
+    "customizable RGB lighting",
+    "fan control panel",
+    "advanced cooling system",
+    "RGB PC case",
+    "premium gaming case"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cf7826ca0ae21f6d31b82"
+  },
+  "title": "GIGABYTE C102",
+  "description": "GIGABYTE C102 GLASS ICE 2x 120mm Fans — Optimized Airflow Design, Full-Size Tempered Glass, USB 3.0 x2 on I/O panel, 360mm Liquid Cooling Compatible, Dust Filte",
+  "price": 2500,
+  "stock": 8,
+  "tags": [
+    "GIGABYTE C102 GLASS ICE",
+    "120mm fans",
+    "optimized airflow",
+    "full-size tempered glass",
+    "USB 3.0",
+    "360mm liquid cooling compatible",
+    "dust filter",
+    "gaming PC case",
+    "high-performance chassis",
+    "stylish case design",
+    "cooling-friendly case"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cf7d86e82f650e44e683f"
+  },
+  "title": "XPG Battlecruiser",
+  "description": "XPG Battlecruiser II Mid-Tower ATX PC Gaming Case — Exoskeleton-Driven, Futuristic Aesthetics, Efficient Airflow, 420mm Radiator Support, GPU Holder, Cable Management - White",
+  "price": 7500,
+  "stock": 0,
+  "tags": [
+    "XPG",
+    "Battlecruiser II",
+    "Mid-Tower",
+    "ATX",
+    "PC",
+    "Gaming Case",
+    "Exoskeleton-Driven",
+    "Futuristic Aesthetics",
+    "Efficient Airflow",
+    "420mm Radiator Support",
+    "GPU Holder",
+    "Cable Management",
+    "White"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cf81e8bcbc36d14f768ed"
+  },
+  "title": "Arktek AK-i1107",
+  "description": "Arktek AK-i1107 – 4 Fan ARGB + PSU AK-650 Watt 80+",
+  "price": 3800,
+  "stock": 9,
+  "tags": [
+    "Arktek",
+    "AK-i1107",
+    "4 Fan",
+    "ARGB",
+    "PSU",
+    "AK-650 Watt",
+    "80+",
+    "PC Components",
+    "Computer Hardware",
+    "Gaming PC",
+    "Case with Power Supply"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d79bbb5da4204f77a13a5"
+  },
+  "title": "Intel Core Ultra 7 265K",
+  "description": "Intel Core Ultra 7 265K - Core Ultra 7 (Series 2) Arrow Lake 20-Core (8P+12E), LGA 1851, 125W Desktop Processor - BX80768265K",
+  "price": 22500,
+  "stock": 12,
+  "tags": [
+    "Intel Core Ultra 7 265K",
+    "Core Ultra 7 Series 2",
+    "Arrow Lake 20-Core Processor",
+    "8P + 12E cores",
+    "LGA 1851 Socket",
+    "125W Desktop Processor",
+    "BX80768265K"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d79fdb5da4204f77a13a8"
+  },
+  "title": "Intel Core Ultra 5 245K",
+  "description": "Intel Core Ultra 5 245K - Core Ultra 5 (Series 2) Arrow Lake 14-Core (6P+8E), LGA 1851, 125W Desktop Processor - BX80768245K",
+  "price": 16700,
+  "stock": 7,
+  "tags": [
+    "Intel Core Ultra 5 245K",
+    "Core Ultra 5 Series 2",
+    "Arrow Lake 14-Core Processor",
+    "6P + 8E cores",
+    "LGA 1851 Socket",
+    "125W Desktop Processor",
+    "BX80768245K"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d7a31b5da4204f77a13ab"
+  },
+  "title": "AMD Ryzen 9 9950X",
+  "description": "AMD Ryzen 9 9950X - Ryzen 9 9000 Series Granite Ridge (Zen 5) 16-Core 4.3 GHz - Socket AM5 170W - Radeon Graphics Processor - 100-100001277WOF",
+  "price": 32500,
+  "stock": 3,
+  "tags": [
+    "AMD Ryzen 9 9950X",
+    "Zen 5 Granite Ridge 16-Core Processor",
+    "Socket AM5",
+    "4.3 GHz",
+    "Radeon Graphics",
+    "170W TDP",
+    "High-Performance CPU"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d7a9798a4ca16ee3f1c71"
+  },
+  "title": "AMD Ryzen 7 9700X",
+  "description": "AMD Ryzen 7 9700X — Ryzen 7 9000 Series Granite Ridge (Zen 5) 8-Core 3.8 GHz - Socket AM5 65W - Radeon Graphics Processor",
+  "price": 18999,
+  "stock": 8,
+  "tags": [
+    "Ryzen7",
+    "9700X",
+    "GraniteRidge",
+    "Zen5",
+    "8Core",
+    "GamingPC",
+    "TechNews",
+    "PCBuilding",
+    "RadeonGraphics",
+    "SocketAM5",
+    "HighPerformance",
+    "ComputerHardware",
+    "TechCommunity",
+    "Overclocking"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d7ad6aabce948c9056bcf"
+  },
+  "title": "AMD Ryzen 5 9600X",
+  "description": "AMD Ryzen 5 9600X — Ryzen 5 9000 Series Granite Ridge (Zen 5) 6-Core 3.9 GHz - Socket AM5 65W - Radeon Graphics Processor",
+  "price": 15000,
+  "stock": 6,
+  "tags": [
+    "Ryzen59600X",
+    "Ryzen5000Series",
+    "GraniteRidge",
+    "Zen5",
+    "6CoreProcessor",
+    "GamingPC",
+    "PCBuilding",
+    "AMDGraphics",
+    "SocketAM5",
+    "TechNews"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d7b77aabce948c9056bd2"
+  },
+  "title": "Intel Core i9-14900KS",
+  "description": "Intel Core i9-14900KS Special Edition 3.2 GHz LGA 1700 Desktop Processor, 24 Cores & 32 Threads, 5.9 GHz Max Turbo Boost Frequency, Intel UHD 770 Graphics, 2* DDR5 & 192GB Max Memory | BX8071514900KS",
+  "price": 37500,
+  "stock": 5,
+  "tags": [
+    "Intel",
+    "Core i9-14900KS Special Edition",
+    "3.2 GHz",
+    "LGA 1700",
+    "Desktop Processor",
+    "24 Cores",
+    "32 Threads",
+    "5.9 GHz Max Turbo Boost Frequency",
+    "Intel UHD 770 Graphics",
+    "2* DDR5",
+    "192GB Max Memory",
+    "BX8071514900KS"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d7bbc3663233804b2a39c"
+  },
+  "title": "AMD Ryzen 7 5700",
+  "description": "AMD Ryzen 7 5700 — 8-Core 3.7 GHz Socket AM4 65W None Integrated Graphics Processor - 100-100000743BOX",
+  "price": 7499,
+  "stock": 22,
+  "tags": [
+    "100-100000743BOX",
+    "AM4 Socket",
+    "7nm FinFET",
+    "8 Cores",
+    "16 Threads",
+    "3.7 GHz Base Clock Speed",
+    "Up to 4.6 GHz Max Boost Clock Speed",
+    "512KB L1 Cache",
+    "4MB L2 Cache",
+    "32MB L3 Cache"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d84a39450774d67f869a6"
+  },
+  "title": "Seagate Barracuda 1TB",
+  "description": "Seagate Barracuda ST1000DM010 1TB 64MB SATA 6Gb/s HDD",
+  "price": 1750,
+  "stock": 16,
+  "tags": [
+    "Seagate Barracuda ST1000DM010 1TB 64MB SATA 6Gb/s HDD",
+    "ST1000DM010",
+    "Internal"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d84f9d4a08fca03219d17"
+  },
+  "title": "Seagate Exos 14TB",
+  "description": "Seagate Exos 14TB Enterprise HDD X16 SATA 6Gb/s 512e/4Kn 7200 RPM 256MB Cache 3.5 Internal Hard Drive ST14000NM001G",
+  "price": 12500,
+  "stock": 9,
+  "tags": [
+    "Seagate Exos 14TB",
+    "64MB SATA 6Gb/s HDD",
+    "ST1000DM010G",
+    "Internal"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8538e016550e33bfc7c8"
+  },
+  "title": "Western Digital 2TB",
+  "description": "Western Digital (WD) Blue WD20EZRZ 2TB SATA 6.0Gb/s HDD",
+  "price": 2900,
+  "stock": 0,
+  "tags": [
+    "Seagate Barracuda ST1000DM010 1TB",
+    "64MB SATA 6Gb/s HDD",
+    "ST1000DM010",
+    "Internal"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d858dea524a15d3af28ec"
+  },
+  "title": "ADATA 2TB SSD Legend 800",
+  "description": "ADATA 2TB SSD Legend 800, NVMe PCIe Gen4 x 4 M.2 2280 Internal Solid State Drive, Speed up to 3,500MB/s, Storage for PC and Laptops, High Endurance with 3D NAND",
+  "price": 6250,
+  "stock": 3,
+  "tags": [
+    "ADATA Legend 800 2TB SSD NVMe PCIe Gen4 x 4 M.2 2280 Internal",
+    "Legend 800",
+    "Internal"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d85c7ea524a15d3af28ef"
+  },
+  "title": "XPG GAMMIX 2TB",
+  "description": "XPG GAMMIX S70 BLADE 2TB PCIe Gen4x4 M.2 2280 SSD",
+  "price": 7500,
+  "stock": 16,
+  "tags": [
+    "XPG GAMMIX S70 BLADE 2TB PCIe Gen4x4 M.2 2280 SSD",
+    "GAMMIX S70 BLADE",
+    "2TB",
+    "PCIe",
+    "Gen4x4",
+    "M.2",
+    "2280",
+    "SSD"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d86398a1e6f6036e67f8b"
+  },
+  "title": "GIGABYTE AORUS Gen5 SSD 2TB",
+  "description": "GIGABYTE AORUS Gen5 SSD 12000 SSD 2TB PCIe 5.0 NVMe M.2 — Read Speed Up to 12400MB/s, Write Speed Up to 11800MB/s - AG512K2TB",
+  "price": 14000,
+  "stock": 1,
+  "tags": [
+    "GIGABYTE AORUS Gen5 SSD",
+    "2TB",
+    "PCIe 5.0",
+    "NVMe",
+    "M.2",
+    "12400MB/s Read Speed",
+    "11800MB/s Write Speed",
+    "AG512K2TB"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d87a849a91ed61a8686da"
+  },
+  "title": "ASUS TUF Gaming 1000W 80Plus Gold",
+  "description": "ASUS TUF Gaming 1000W 80Plus Gold Fully Modular Power Supply — ATX 3.0 Compatible 80+ Gold Certified, Military-grade, Dual Ball Bearing, Axial-tech Fan, PCB Coating, White - 90YE00S5-B0NA00",
+  "price": 8900,
+  "stock": 3,
+  "tags": [
+    "ASUS TUF Gaming 1000W PSU",
+    "80Plus Gold Fully Modular",
+    "ATX 3.0 Compatible",
+    "80+ Gold Certified",
+    "Military-grade",
+    "Dual Ball Bearing Fan"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d87de8e7d61bb10c36f04"
+  },
+  "title": "GAMDIAS HELIOS P1A-850G 850W 80 Plus Gold",
+  "description": "GAMDIAS HELIOS P1A-850G 850W 80 Plus Gold — Fully Modular, 120mm Hydraulic Bearing Fan, High Quality Capacitors, Automatic Fan Speed , Full DC-DC, LLC Resonant Circuit Design, OVP/UVP/OPP/SCP/OCP/OTP",
+  "price": 4500,
+  "stock": 8,
+  "tags": [
+    "GAMDIAS HELIOS P1A-850G 850W Power Supply",
+    "80 Plus Gold Certified",
+    "Fully Modular PSU",
+    "120mm Hydraulic Bearing Fan",
+    "High-Quality Capacitors",
+    "Automatic Fan Speed Control",
+    "Full DC-DC Design",
+    "LLC Resonant Circuit",
+    "OVP UVP OPP SCP OCP OTP Protection"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d880e8e7d61bb10c36f07"
+  },
+  "title": "Cooler Master MWE Gold 1050",
+  "description": "Cooler Master MWE Gold 1050 V2 ATX 3.0 — 1050W - 80+ Gold - Japanese capacitors - Fully Modular",
+  "price": 9500,
+  "stock": 4,
+  "tags": [
+    "Cooler Master MWE Gold 1050W V2 ATX 3.0",
+    "1050W",
+    "80+ Gold",
+    "Japanese capacitors",
+    "Fully Modular",
+    "MPE-A501-AFCAG-3"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d89d46b07c2f5dfdf12a6"
+  },
+  "title": "ASUS ROG Strix Z890-E",
+  "description": "ASUS ROG Strix Z890-E Gaming WiFi LGA 1851 ATX Motherboard — Advanced AI PC-Ready, 18+2+1+2 Stages, DDR5, WiFi 7, 7X M.2, Thunderbolt™ 4, USB Type-C®, AI Overclocking, Cooling & Networking",
+  "price": 29500,
+  "stock": 9,
+  "tags": [
+    "ASUS ROG Strix Z890-E Gaming",
+    "LGA 1851 motherboard",
+    "Advanced AI PC-ready",
+    "18+2+1+2 power stages",
+    "DDR5 RAM support",
+    "WiFi 7",
+    "7x M.2 slots",
+    "Thunderbolt 4",
+    "USB Type-C®",
+    "AI overclocking",
+    "AI cooling",
+    "AI networking",
+    "High-performance gaming motherboard"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8a156b07c2f5dfdf12a9"
+  },
+  "title": "ASUS ROG MAXIMUS Z890 HERO",
+  "description": "ASUS ROG MAXIMUS Z890 HERO LGA 1851 ATX motherboard — Advanced AI PC-ready, 22+2+1+2 stages, DDR5, WiFi 7, 3x PCIe® 5.0 M.2, Thunderbolt™ 4, USB Type-C®, AI Overclocking/Cooling/Networking",
+  "price": 38000,
+  "stock": 7,
+  "tags": [
+    "ASUS ROG MAXIMUS Z890 HERO LGA 1851 ATX motherboard",
+    "Advanced AI PC-ready",
+    "DDR5",
+    "WiFi 7",
+    "3x PCIe® 5.0 M.2",
+    "Thunderbolt™ 4",
+    "USB Type-C®",
+    "AI Overclocking",
+    "AI Cooling",
+    "AI Networking",
+    "ROG MAXIMUS Z890 HERO",
+    "Motherboard"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8a4f6b07c2f5dfdf12ac"
+  },
+  "title": "ASUS ROG MAXIMUS Z890 EXTREME",
+  "description": "ASUS ROG MAXIMUS Z890 EXTREME — Intel Z890 LGA 1851 E-ATX motherboard, Advanced AI PC-ready, 24+2+1+2 stages, DDR5, WiFi7, 2.5G/10G LAN, PCIe 5.0 M.2, Thunderbolt 5, USB Type-C, AI OC, 5 Inch LCD Screen",
+  "price": 65999,
+  "stock": 0,
+  "tags": [
+    "ASUS ROG MAXIMUS Z890 EXTREME",
+    "Intel Z890 chipset",
+    "LGA 1851",
+    "E-ATX motherboard",
+    "Advanced AI PC-ready",
+    "24+2+1+2 power stages",
+    "DDR5 support",
+    "Wi-Fi 7",
+    "2.5G and 10G LAN",
+    "PCIe 5.0 M.2",
+    "Thunderbolt 5",
+    "USB Type-C",
+    "AI Overclocking",
+    "5-inch LCD screen",
+    "High-performance motherboard"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8a866b07c2f5dfdf12af"
+  },
+  "title": "ASUS PRIME Z890-P WIFI Z890",
+  "description": "ASUS PRIME Z890-P WIFI Z890 — LGA 1851 ATX motherboard, Intel Core Ultra Series 2 Ready, Advanced AI PC-ready, 14+1+1+2 power stage, DDR5, PCIe 5.0, Thunderbolt 4 USB Type-C, 4x M.2, Wi-Fi 7, 2.5Gb",
+  "price": 15000,
+  "stock": 8,
+  "tags": [
+    "ASUS PRIME Z890-P WIFI Z890",
+    "LGA 1851",
+    "Intel Core Ultra Series 2 ready",
+    "ATX motherboard",
+    "DDR5 support",
+    "PCIe 5.0",
+    "Thunderbolt 4 USB Type-C",
+    "Four M.2 slots",
+    "Wi-Fi 7",
+    "2.5Gb Ethernet",
+    "High-performance motherboard"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8abd18670cabca8fff94"
+  },
+  "title": "MSI MAG Z890",
+  "description": "MSI MAG Z890 TOMAHAWK WIFI LGA 1851 Intel Z890 SATA 6Gb/s ATX Motherboard",
+  "price": 20499,
+  "stock": 6,
+  "tags": [
+    "MSI MAG Z890 TOMAHAWK WIFI Motherboard",
+    "LGA 1851",
+    "Intel Z890",
+    "SATA 6Gb/s",
+    "ATX",
+    "Wi-Fi 7",
+    "5G LAN",
+    "Thunderbolt 4",
+    "PCIe 5.0",
+    "M.2 Gen5",
+    "EZ DIY",
+    "Model MAG Z890 TOMAHAWK WIFI"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8cce6ce8049a1f4ff892"
+  },
+  "title": "Redragon K552-R",
+  "description": "Redragon K552-R KUMARA RAINBOW RGB Backlit Mechanical Gaming Keyboard",
+  "price": 1950,
+  "stock": 11,
+  "tags": [
+    "Redragon K552-R keyboard",
+    "RGB backlit mechanical keyboard",
+    "Compact gaming keyboard",
+    "Redragon K552 KUMARA",
+    "Rainbow LED gaming keyboard",
+    "87-key mechanical keyboard",
+    "Cherry MX Blue equivalent switches",
+    "Redragon RGB gaming keyboard",
+    "Mechanical keyboard for PC"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8d06c8ec6c174dc761aa"
+  },
+  "title": "Cooler Master CH331 Gaming Headset",
+  "description": "Cooler Master CH331 Gaming Headset Virtual 7.1 Surround Sound — Omnidirectional Mic, Durable Aluminum Frame, RGB Illumination, Detachable Omni-Directional Boom Mic, USB Connectivity",
+  "price": 1999,
+  "stock": 14,
+  "tags": [
+    "Cooler Master CH331 Gaming Headset",
+    "Virtual 7.1 Surround Sound",
+    "Omnidirectional Mic",
+    "Durable Aluminum Frame",
+    "RGB Illumination",
+    "Detachable Omni-Directional Boom Mic",
+    "USB Connectivity"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8d3bc8ec6c174dc761ad"
+  },
+  "title": "Redragon M693 Wireless Bluetooth Gaming Mouse",
+  "description": "Redragon M693 Wireless Bluetooth Gaming Mouse, 8000 DPI Wired/Wireless Gamer Mouse w/ 3-Mode Connection, BT & 2.4G Wireless, 7 Macro Buttons, Durable Power Capacity and RGB Backlight for PC/Mac/Laptop",
+  "price": 1800,
+  "stock": 9,
+  "tags": [
+    "Redragon M693 Gaming Mouse",
+    "Wireless Mouse",
+    "Bluetooth",
+    "8000 DPI",
+    "3-Mode Connection",
+    "BT",
+    "2.4G Wireless",
+    "7 Macro Buttons",
+    "Durable Power Capacity",
+    "RGB Backlight",
+    "PC",
+    "Mac",
+    "Laptop"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8d6c952e88b3cdb5b1d0"
+  },
+  "title": "REDRAGON GS580 CALLIOPE RGB Gaming Desktop Speakers",
+  "description": "REDRAGON GS580 CALLIOPE RGB Gaming Desktop Speakers - 5W x 2.0 Channel - 3.5mm AUX stereo sound - With Calssic Volume Control Knob For Computer PC - Black",
+  "price": 1250,
+  "stock": 3,
+  "tags": [
+    "Redragon GS580 CALLIOPE Gaming Desktop Speakers",
+    "RGB",
+    "2.0 Channel",
+    "5W x 2",
+    "3.5mm AUX",
+    "Stereo Sound",
+    "Classic Volume Control Knob",
+    "Computer PC",
+    "Black"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8dafd8844b9e3ace2d9a"
+  },
+  "title": "Redragon GAMING CHAIR",
+  "description": "Redragon ASSASSIN C501 GAMING CHAIR — Black/RED",
+  "price": 8500,
+  "stock": 13,
+  "tags": [
+    "Redragon Assassin C501 Gaming Chair",
+    "Gaming Furniture",
+    "Ergonomic Chair",
+    "PC Gaming",
+    "Comfortable Seating",
+    "Gaming Gear",
+    "Gaming Setup",
+    "Black",
+    "Red"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8de1d8844b9e3ace2d9d"
+  },
+  "title": "Elgato Facecam",
+  "description": "Elgato Facecam Full HD USB Type-C 3.0 Webcam — 10WAA9901",
+  "price": 10500,
+  "stock": 8,
+  "tags": [
+    "Elgato Facecam",
+    "Full HD",
+    "USB",
+    "Type-C 3.0",
+    "Webcam",
+    "10WAA9901"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8fbc68239324745e8cd5"
+  },
+  "title": "GIGABYTE GeForce RTX 4070 SUPER",
+  "description": "GIGABYTE GeForce RTX 4070 SUPER EAGLE OC ICE 12G Graphics Card — 3x WINDFORCE Fans, 12GB 192-bit GDDR6X, GV-N407SEAGLEOC ICE-12GD Video Card",
+  "price": 35500,
+  "stock": 5,
+  "tags": [
+    "GIGABYTE GeForce RTX 4070",
+    "RTX 4070 SUPER EAGLE OC ICE",
+    "12GB GDDR6X",
+    "192-bit",
+    "WINDFORCE 3X cooling",
+    "Overclocked GPU",
+    "GV-N407SEAGLEOC ICE-12GD",
+    "High-performance graphics card",
+    "Gaming GPU",
+    "NVIDIA graphics",
+    "4K gaming",
+    "Powerful video card"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d8ffd68239324745e8cd8"
+  },
+  "title": "GIGABYTE GeForce RTX 4060 Ti",
+  "description": "GIGABYTE GeForce RTX 4060 Ti GAMING OC 16G Graphics Card — 3x WINDFORCE Fans, 16GB 128-bit GDDR6, GV-N406TGAMING OC-16GD Video Card",
+  "price": 25800,
+  "stock": 3,
+  "tags": [
+    "GIGABYTE GeForce RTX 4060 Ti",
+    "RTX 4060 Ti GAMING OC",
+    "16GB GDDR6",
+    "128-bit",
+    "WINDFORCE 3X cooling",
+    "Overclocked graphics card",
+    "GV-N406TGAMING OC-16GD",
+    "Gaming GPU",
+    "High-performance graphics card",
+    "NVIDIA RTX 4060 Ti",
+    "4K gaming",
+    "Advanced video card"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d903168239324745e8cdb"
+  },
+  "title": "ASUS ROG Strix GeForce RTX 4080 SUPER",
+  "description": "ASUS ROG Strix GeForce RTX 4080 SUPER 16GB GDDR6X OC Edition White — DLSS 3 and chart-topping thermal performance.",
+  "price": 69000,
+  "stock": 1,
+  "tags": [
+    "ASUS ROG Strix GeForce RTX 4080 SUPER 16GB GDDR6X OC Edition White",
+    "White",
+    "GeForce RTX 4080 SUPER",
+    "ASUS ROG Strix",
+    "Gaming graphics card",
+    "DLSS 3",
+    "16GB GDDR6X",
+    "Thermal performance",
+    "ASUS GPU",
+    "Graphics card",
+    "Computer hardware",
+    "Video game hardware",
+    "PC components",
+    "GPU performance",
+    "Gaming graphics card",
+    "Overclocking",
+    "ASUS graphics card",
+    "NVIDIA GeForce",
+    "RTX 40 series GPU",
+    "Gaming PC",
+    "PC build",
+    "Gaming setup",
+    "Computer build",
+    "PC hardware",
+    "Computer accessories",
+    "Gaming gear"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d906b68239324745e8cde"
+  },
+  "title": "GIGABYTE GeForce RTX 4070 Ti Super",
+  "description": "GIGABYTE GeForce RTX 4070 Ti Super AI TOP 16G Graphics Card — Turbo Fan Cooling System, 16GB 256-bit GDDR6X, GV-N407TSAI TOP-16GD Video Card",
+  "price": 49800,
+  "stock": 7,
+  "tags": [
+    "GIGABYTE GeForce RTX 4070 Ti",
+    "RTX 4070 Ti Super AI TOP",
+    "16GB GDDR6X",
+    "256-bit",
+    "Graphics card",
+    "Turbo Fan cooling system",
+    "High-performance GPU",
+    "GV-N407TSAI TOP-16GD",
+    "Gaming video card",
+    "NVIDIA GPU",
+    "AI-optimized graphics",
+    "4K gaming",
+    "Powerful graphics card"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d909e68239324745e8ce1"
+  },
+  "title": "ASUS ROG Strix GeForce RTX 4080 SUPER ",
+  "description": "ASUS ROG Strix GeForce RTX 4080 SUPER 16GB GDDR6X OC Edition — DLSS 3 and chart-topping thermal performance.",
+  "price": 68000,
+  "stock": 7,
+  "tags": [
+    "ASUS ROG Strix GeForce RTX 4080 SUPER 16GB GDDR6X OC Edition",
+    "GeForce RTX 4080 SUPER",
+    "ASUS ROG Strix",
+    "Gaming graphics card",
+    "DLSS 3",
+    "16GB GDDR6X",
+    "Thermal performance",
+    "ASUS GPU",
+    "Graphics card",
+    "Computer hardware",
+    "Video game hardware",
+    "PC components",
+    "GPU performance",
+    "Gaming graphics card",
+    "Overclocking",
+    "ASUS graphics card",
+    "NVIDIA GeForce",
+    "RTX 40 series GPU",
+    "Gaming PC",
+    "PC build",
+    "Gaming setup",
+    "Computer build",
+    "PC hardware",
+    "Computer accessories",
+    "Gaming gear"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d90d9a145538ec62e2c1f"
+  },
+  "title": "ASUS Dual Radeon RX 7700",
+  "description": "ASUS Dual Radeon RX 7700 XT OC Edition 12GB GDDR6 — Ray-Tracing Graphics Card, 3456 Streams, 2599MHz Boost",
+  "price": 23500,
+  "stock": 12,
+  "tags": [
+    "ASUS Dual Radeon RX 7700 XT OC Edition",
+    "Radeon RX 7700 XT",
+    "Gaming GPU",
+    "12GB GDDR6",
+    "Ray-tracing",
+    "3456 Streams",
+    "2599MHz Boost",
+    "ASUS GPU",
+    "Graphics card",
+    "Computer hardware",
+    "Video game hardware",
+    "PC components",
+    "GPU performance",
+    "Gaming graphics card",
+    "Overclocking",
+    "ASUS graphics card",
+    "AMD Radeon",
+    "RX 7000 series GPU",
+    "Gaming PC",
+    "PC build",
+    "Gaming setup",
+    "Computer build",
+    "PC hardware",
+    "Computer accessories",
+    "Gaming gear"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d910faef3bb159d79a06c"
+  },
+  "title": "ASUS ROG Strix RTX 4070 SUPER",
+  "description": "ASUS ROG Strix RTX 4070 SUPER OC Edition 12GB GDDR6X Gaming Graphics Card — PCIe 4.0, DLSS 3, Massive vented backplate, Power sensing, Aura Sync",
+  "price": 42000,
+  "stock": 0,
+  "tags": [
+    "ASUS",
+    "ROG",
+    "Strix",
+    "RTX 4070",
+    "SUPER",
+    "OC Edition",
+    "12GB",
+    "GDDR6X",
+    "Gaming",
+    "Graphics Card",
+    "PCIe 4.0",
+    "DLSS 3",
+    "Massive Vented Backplate",
+    "Power Sensing",
+    "Aura Sync",
+    "ROG-STRIX-RTX4070S-O12G-GAMING"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d91da9ef8c4529044f23b"
+  },
+  "title": "ZOTAC GAMING GeForce RTX 3050",
+  "description": "ZOTAC GAMING GeForce RTX 3050 ECO Edition 8GB GDDR6 — 128-bit 14 Gbps PCIE 4.0 Gaming Graphics Card, Active Fan Control, FREEZE Fan Stop, ZT-A30500K-10M",
+  "price": 12499,
+  "stock": 7,
+  "tags": [
+    "ZOTAC",
+    "GAMING",
+    "GeForce",
+    "RTX 3050",
+    "ECO",
+    "8GB",
+    "GDDR6",
+    "128-bit",
+    "14 Gbps",
+    "PCIE 4.0",
+    "Active Fan Control",
+    "FREEZE Fan Stop",
+    "ZT-A30500K-10M"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d92060578de40b6c28062"
+  },
+  "title": "GALAX GeForce RTX 4080",
+  "description": "GALAX GeForce RTX 4080 16GB SG 1-Click OC 16GB GDDR6X 256-bit DP*3/HDMI 2.1/DLSS 3",
+  "price": 53000,
+  "stock": 1,
+  "tags": [
+    "GALAX",
+    "GeForce",
+    "RTX",
+    "4080",
+    "16GB",
+    "SG",
+    "1-Click OC",
+    "16GB",
+    "GDDR6X",
+    "256-bit",
+    "DP*3",
+    "HDMI 2.1",
+    "DLSS 3"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d93f8f760f1be31aa0856"
+  },
+  "title": "XPG D50 RGB 16GB",
+  "description": "XPG SPECTRIX D50 RGB 16GB (2x8GB) DDR4 3200MHz",
+  "price": 2500,
+  "stock": 19,
+  "tags": [
+    "XPG",
+    "SPECTRIX",
+    "D50",
+    "RGB",
+    "16GB",
+    "2x8GB",
+    "DDR4",
+    "3200MHz",
+    "AX4U32008G16A-DT50",
+    "RAM"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d9425f760f1be31aa0859"
+  },
+  "title": "XPG Lancer RGB 32GB",
+  "description": "XPG Lancer RGB 32GB (2x16GB) DDR5 5600MHz",
+  "price": 6000,
+  "stock": 7,
+  "tags": [
+    "XPG",
+    "Lancer RGB",
+    "32GB",
+    "2x16GB",
+    "DDR5",
+    "5600MHz",
+    "AX5U5600C3616G-DCLARBK",
+    "RAM"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d9483f760f1be31aa085f"
+  },
+  "title": "Corsair 32GB (2x16GB) VENGEANCE",
+  "description": "Corsair 32GB (2x16GB) VENGEANCE RGB DDR5 DRAM 5600MHz C36 Memory Kit — Black",
+  "price": 7900,
+  "stock": 0,
+  "tags": [
+    "Corsair",
+    "32GB",
+    "2x16GB",
+    "VENGEANCE",
+    "RGB",
+    "DDR5",
+    "DRAM",
+    "5600MHz",
+    "C36",
+    "Memory Kit",
+    "Black"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675d94b2e4978e517a68a3b4"
+  },
+  "title": "PNY XLR8 RGB 16GB (2x 8GB) DDR4",
+  "description": "PNY XLR8 RGB 16GB (2x 8GB) DDR4 3600MHz Memory MD16GK2D4360016XRGB",
+  "price": 2900,
+  "stock": 16,
+  "tags": [
+    "PNY",
+    "XLR8",
+    "RGB",
+    "16GB",
+    "2x8GB",
+    "DDR4",
+    "3600MHz",
+    "Memory",
+    "MD16GK2D4360016XRGB"
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6766ca97465f0d5bb43a1707"
+  },
+  "title": "new product",
+  "description": "new product",
+  "price": 100,
+  "stock": 15,
+  "tags": [],
+  "__v": 0
+}]

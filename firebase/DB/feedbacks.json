@@ -1,0 +1,136 @@
+[{
+  "_id": {
+    "$oid": "6766799e1676a03af0633700"
+  },
+  "item": {
+    "$oid": "675d8fbc68239324745e8cd5"
+  },
+  "user": {
+    "$oid": "67656094f7873e73ee89ac44"
+  },
+  "rating": 5,
+  "comment": "nice product!",
+  "createdAt": {
+    "$date": "2024-12-21T08:17:34.547Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "676679b21676a03af0633714"
+  },
+  "item": {
+    "$oid": "675d8ffd68239324745e8cd8"
+  },
+  "user": {
+    "$oid": "67656094f7873e73ee89ac44"
+  },
+  "rating": 4,
+  "comment": "good",
+  "createdAt": {
+    "$date": "2024-12-21T08:17:54.263Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "676679bf1676a03af063372a"
+  },
+  "item": {
+    "$oid": "675d903168239324745e8cdb"
+  },
+  "user": {
+    "$oid": "67656094f7873e73ee89ac44"
+  },
+  "rating": 5,
+  "comment": "love this",
+  "createdAt": {
+    "$date": "2024-12-21T08:18:07.949Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67667f8c1676a03af06339d7"
+  },
+  "item": {
+    "$oid": "675d7a9798a4ca16ee3f1c71"
+  },
+  "user": {
+    "$oid": "67667f7e1676a03af06339bd"
+  },
+  "rating": 5,
+  "comment": "wow",
+  "createdAt": {
+    "$date": "2024-12-21T08:42:52.240Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67667f9a1676a03af06339ef"
+  },
+  "item": {
+    "$oid": "675cedeb653238ff94ebde8f"
+  },
+  "user": {
+    "$oid": "67667f7e1676a03af06339bd"
+  },
+  "rating": 5,
+  "comment": "nice price",
+  "createdAt": {
+    "$date": "2024-12-21T08:43:06.603Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67667fc31676a03af0633a04"
+  },
+  "item": {
+    "$oid": "675d8d3bc8ec6c174dc761ad"
+  },
+  "user": {
+    "$oid": "67667f7e1676a03af06339bd"
+  },
+  "rating": 2,
+  "comment": "very expensive",
+  "createdAt": {
+    "$date": "2024-12-21T08:43:47.933Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6766b6c814f220f4d31be312"
+  },
+  "item": {
+    "$oid": "675d906b68239324745e8cde"
+  },
+  "user": {
+    "$oid": "6766b63014f220f4d31be2d5"
+  },
+  "rating": 5,
+  "comment": "great!",
+  "createdAt": {
+    "$date": "2024-12-21T12:38:32.375Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6766cd9c465f0d5bb43a17ba"
+  },
+  "item": {
+    "$oid": "675d8fbc68239324745e8cd5"
+  },
+  "user": {
+    "$oid": "6766cc8e465f0d5bb43a1739"
+  },
+  "rating": 3,
+  "comment": "sadfsgdg",
+  "createdAt": {
+    "$date": "2024-12-21T14:15:56.899Z"
+  },
+  "__v": 0
+}]

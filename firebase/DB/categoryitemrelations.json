@@ -1,0 +1,392 @@
+[{
+  "_id": {
+    "$oid": "675cf0af653238ff94ebdea9"
+  },
+  "category": {
+    "$oid": "675ce9d0653238ff94ebde4f"
+  },
+  "items": [
+    {
+      "$oid": "675cecbe653238ff94ebde8c"
+    },
+    {
+      "$oid": "675cedeb653238ff94ebde8f"
+    },
+    {
+      "$oid": "675ceedb653238ff94ebde96"
+    },
+    {
+      "$oid": "675cef53653238ff94ebde99"
+    },
+    {
+      "$oid": "675ceffe653238ff94ebde9c"
+    },
+    {
+      "$oid": "675d93c4f760f1be31aa0853"
+    },
+    {
+      "$oid": "675d9451f760f1be31aa085c"
+    },
+    {
+      "$oid": "6766cdd5465f0d5bb43a1817"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-14T02:42:55.926Z"
+  },
+  "__v": 7
+},
+{
+  "_id": {
+    "$oid": "675cf3ed3a8f8cd3c161a0d6"
+  },
+  "category": {
+    "$oid": "675cea24653238ff94ebde52"
+  },
+  "items": [
+    {
+      "$oid": "675cf2af0e9b97d7985d3fe0"
+    },
+    {
+      "$oid": "675cf33cd47944224edbac96"
+    },
+    {
+      "$oid": "675cf3a7e6789be7be75fe6f"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-14T02:56:45.770Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "675cf6091083db899845bed5"
+  },
+  "category": {
+    "$oid": "675cea5e653238ff94ebde56"
+  },
+  "items": [
+    {
+      "$oid": "675cf4b06a853de4c6cff4f0"
+    },
+    {
+      "$oid": "675cf4fcb1fccc1a6a75e8a1"
+    },
+    {
+      "$oid": "675cf5528b0ea44f71787f48"
+    },
+    {
+      "$oid": "675cf5c19707aecaf5e739fe"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-14T03:05:45.901Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "675cf887ad0e4732fc4f3919"
+  },
+  "category": {
+    "$oid": "675cea85653238ff94ebde59"
+  },
+  "items": [
+    {
+      "$oid": "675cf6c5255668ff4b2cc0eb"
+    },
+    {
+      "$oid": "675cf708c0aa7e8fbd037da5"
+    },
+    {
+      "$oid": "675cf7474791ef87df1a0317"
+    },
+    {
+      "$oid": "675cf7826ca0ae21f6d31b82"
+    },
+    {
+      "$oid": "675cf7d86e82f650e44e683f"
+    },
+    {
+      "$oid": "675cf81e8bcbc36d14f768ed"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-14T03:16:23.847Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "675d7bea23504d9797ab2515"
+  },
+  "category": {
+    "$oid": "675cea9e653238ff94ebde5c"
+  },
+  "items": [
+    {
+      "$oid": "675d79bbb5da4204f77a13a5"
+    },
+    {
+      "$oid": "675d79fdb5da4204f77a13a8"
+    },
+    {
+      "$oid": "675d7a31b5da4204f77a13ab"
+    },
+    {
+      "$oid": "675d7a9798a4ca16ee3f1c71"
+    },
+    {
+      "$oid": "675d7b77aabce948c9056bd2"
+    },
+    {
+      "$oid": "675d7bbc3663233804b2a39c"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-14T12:36:58.623Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "675d867a8a45ecdf9656bf13"
+  },
+  "category": {
+    "$oid": "675cead9653238ff94ebde5f"
+  },
+  "items": [
+    {
+      "$oid": "675d84a39450774d67f869a6"
+    },
+    {
+      "$oid": "675d84f9d4a08fca03219d17"
+    },
+    {
+      "$oid": "675d8538e016550e33bfc7c8"
+    },
+    {
+      "$oid": "675d858dea524a15d3af28ec"
+    },
+    {
+      "$oid": "675d85c7ea524a15d3af28ef"
+    },
+    {
+      "$oid": "675d86398a1e6f6036e67f8b"
+    },
+    {
+      "$oid": "675cf33cd47944224edbac96"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-14T13:22:02.562Z"
+  },
+  "__v": 6
+},
+{
+  "_id": {
+    "$oid": "675d8852b9616d26655e3297"
+  },
+  "category": {
+    "$oid": "675ceaf8653238ff94ebde62"
+  },
+  "items": [
+    {
+      "$oid": "675d877249a91ed61a8686d7"
+    },
+    {
+      "$oid": "675d87a849a91ed61a8686da"
+    },
+    {
+      "$oid": "675d87de8e7d61bb10c36f04"
+    },
+    {
+      "$oid": "675d880e8e7d61bb10c36f07"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-14T13:29:54.163Z"
+  },
+  "__v": 3
+},
+{
+  "_id": {
+    "$oid": "675d8aed0787fdf283b316aa"
+  },
+  "category": {
+    "$oid": "675ceb2a653238ff94ebde7d"
+  },
+  "items": [
+    {
+      "$oid": "675d89d46b07c2f5dfdf12a6"
+    },
+    {
+      "$oid": "675d8a156b07c2f5dfdf12a9"
+    },
+    {
+      "$oid": "675d8a4f6b07c2f5dfdf12ac"
+    },
+    {
+      "$oid": "675d8a866b07c2f5dfdf12af"
+    },
+    {
+      "$oid": "675d8abd18670cabca8fff94"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-14T13:41:01.056Z"
+  },
+  "__v": 4
+},
+{
+  "_id": {
+    "$oid": "675d8e1407fdea23a1542de3"
+  },
+  "category": {
+    "$oid": "675ceb47653238ff94ebde80"
+  },
+  "items": [
+    {
+      "$oid": "675d8de1d8844b9e3ace2d9d"
+    },
+    {
+      "$oid": "675d8dafd8844b9e3ace2d9a"
+    },
+    {
+      "$oid": "675d8d3bc8ec6c174dc761ad"
+    },
+    {
+      "$oid": "675d8d6c952e88b3cdb5b1d0"
+    },
+    {
+      "$oid": "675d8d06c8ec6c174dc761aa"
+    },
+    {
+      "$oid": "675d8cce6ce8049a1f4ff892"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-14T13:54:28.525Z"
+  },
+  "__v": 5
+},
+{
+  "_id": {
+    "$oid": "675d924d70017dc0db548b33"
+  },
+  "category": {
+    "$oid": "675ceb68653238ff94ebde83"
+  },
+  "items": [
+    {
+      "$oid": "675d92060578de40b6c28062"
+    },
+    {
+      "$oid": "675d90d9a145538ec62e2c1f"
+    },
+    {
+      "$oid": "675d909e68239324745e8ce1"
+    },
+    {
+      "$oid": "675d906b68239324745e8cde"
+    },
+    {
+      "$oid": "675d8ffd68239324745e8cd8"
+    },
+    {
+      "$oid": "675d903168239324745e8cdb"
+    },
+    {
+      "$oid": "675d8fbc68239324745e8cd5"
+    },
+    {
+      "$oid": "675d91da9ef8c4529044f23b"
+    },
+    {
+      "$oid": "675d910faef3bb159d79a06c"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-14T14:12:29.842Z"
+  },
+  "__v": 8
+},
+{
+  "_id": {
+    "$oid": "675d94e633ce09655262ccf3"
+  },
+  "category": {
+    "$oid": "675d8969a712e8dac8538d49"
+  },
+  "items": [
+    {
+      "$oid": "675d93c4f760f1be31aa0853"
+    },
+    {
+      "$oid": "675d93f8f760f1be31aa0856"
+    },
+    {
+      "$oid": "675d9483f760f1be31aa085f"
+    },
+    {
+      "$oid": "675d94b2e4978e517a68a3b4"
+    },
+    {
+      "$oid": "675d9425f760f1be31aa0859"
+    },
+    {
+      "$oid": "675d9451f760f1be31aa085c"
+    },
+    {
+      "$oid": "6766ca97465f0d5bb43a1707"
+    },
+    {
+      "$oid": "6766cdd5465f0d5bb43a1817"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-14T14:23:34.967Z"
+  },
+  "__v": 7
+},
+{
+  "_id": {
+    "$oid": "6765dc86e79695adb81b4d9b"
+  },
+  "category": {
+    "$oid": "6765d962a6e0bad549e6e628"
+  },
+  "items": [
+    {
+      "$oid": "675cecbe653238ff94ebde8c"
+    },
+    {
+      "$oid": "675cf33cd47944224edbac96"
+    },
+    {
+      "$oid": "6765ea0b7b2026e437b3facd"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-20T21:07:18.825Z"
+  },
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "67667e021676a03af06338a7"
+  },
+  "category": {
+    "$oid": "67667d6a1676a03af0633854"
+  },
+  "items": [
+    {
+      "$oid": "67667e021676a03af06338a4"
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-12-21T08:36:18.152Z"
+  },
+  "__v": 0
+}]
