@@ -17,8 +17,6 @@ export default function Header() {
     loadUser();
   }, []);
 
-  const goTo = (route) => navigation.navigate(route);
-
   const handleLogout = async () => {
     await AsyncStorage.removeItem("user");
     setUser(null);
@@ -39,46 +37,25 @@ export default function Header() {
           />
         </View>
 
-        <View style={styles.mid}>
+        <View style={styles.searchWrapper}>
           <SearchBar placeholder="Search here..." caseSensitive={false} />
         </View>
 
-        <View style={styles.right}>
+        {user && (
           <View style={styles.auth}>
-            {user ? (
-              <>
-                <TouchableOpacity
-                  style={styles.authBtn}
-                  onPress={() => goTo("Profile")}
-                >
-                  <FontAwesome5 name="user" style={styles.icon} />
-                  <Text style={styles.authText}>{user.name || "Profile"}</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.authBtn} onPress={handleLogout}>
-                  <FontAwesome5 name="sign-out-alt" style={styles.icon} />
-                  <Text style={styles.authText}>Logout</Text>
-                </TouchableOpacity>
-              </>
-            ) : (
-              <>
-                <TouchableOpacity
-                  style={styles.authBtn}
-                  onPress={() => goTo("Login")}
-                >
-                  <FontAwesome5 name="user" style={styles.icon} />
-                  <Text style={styles.authText}>Login</Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                  style={styles.authBtn}
-                  onPress={() => goTo("Register")}
-                >
-                  <FontAwesome5 name="pen" style={styles.icon} />
-                  <Text style={styles.authText}>Register</Text>
-                </TouchableOpacity>
-              </>
-            )}
+            <TouchableOpacity
+              style={styles.authBtn}
+              onPress={() => navigation.navigate("Profile")}
+            >
+              <FontAwesome5 name="user" style={styles.icon} />
+              <Text style={styles.authText}>{user.name || "Profile"}</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.authBtn} onPress={handleLogout}>
+              <FontAwesome5 name="sign-out-alt" style={styles.icon} />
+              <Text style={styles.authText}>Logout</Text>
+            </TouchableOpacity>
           </View>
-        </View>
+        )}
       </View>
     </View>
   );
@@ -98,7 +75,6 @@ const styles = StyleSheet.create({
     height: 80,
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
     paddingHorizontal: 10,
   },
   left: {
@@ -107,24 +83,13 @@ const styles = StyleSheet.create({
     borderRadius: 30,
     overflow: "hidden",
   },
-  mid: {
-    flex: 1,
-    marginHorizontal: 20,
-    zIndex: 100,
-  },
   logo: {
     width: "100%",
     height: "100%",
   },
-  mid: {
+  searchWrapper: {
     flex: 1,
-    marginHorizontal: 20,
-  },
-  right: {
-    width: 150,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
+    marginHorizontal: 15,
   },
   auth: {
     flexDirection: "row",
@@ -142,15 +107,5 @@ const styles = StyleSheet.create({
   icon: {
     fontSize: 20,
     color: "#495E57",
-  },
-  cart: {
-    backgroundColor: "#F4CE14",
-    borderRadius: 4,
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-  },
-  cartIcon: {
-    fontSize: 18,
-    color: "#45474B",
   },
 });

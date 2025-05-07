@@ -24,6 +24,9 @@
     },
     "web": {
       "favicon": "./assets/logo.jpg"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

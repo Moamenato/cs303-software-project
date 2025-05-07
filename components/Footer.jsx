@@ -1,46 +1,39 @@
 import React from "react";
 import { View, TouchableOpacity, StyleSheet } from "react-native";
-import { useNavigation, CommonActions } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
+import { useRouter } from "expo-router";
 
 export default function Footer() {
-  const navigation = useNavigation();
-
-  const resetToMenu = () => {
-    navigation.dispatch(
-      CommonActions.reset({
-        index: 1,
-        routes: [{ name: "Homepage" }, { name: "Categories" }],
-      })
-    );
-  };
+  const router = useRouter();
 
   return (
     <View style={styles.footerContainer}>
       <View style={styles.newIconContainer}>
         <TouchableOpacity
           style={styles.iconButton}
-          onPress={() => {
-            navigation.dispatch(
-              CommonActions.reset({
-                index: 0,
-                routes: [{ name: "Homepage" }],
-              })
-            );
-          }}
+          onPress={() => router.replace("/")}
         >
           <Ionicons name="home" size={30} color="white" />
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.iconButton}>
+        <TouchableOpacity
+          style={styles.iconButton}
+          onPress={() => router.replace("/profile")}
+        >
           <Ionicons name="person" size={30} color="white" />
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.iconButton}>
+        <TouchableOpacity
+          style={styles.iconButton}
+          onPress={() => router.replace("/cart")}
+        >
           <Ionicons name="cart" size={30} color="white" />
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.iconButton} onPress={resetToMenu}>
+        <TouchableOpacity
+          style={styles.iconButton}
+          onPress={() => router.replace("/categories")}
+        >
           <Ionicons name="grid-outline" size={30} color="white" />
         </TouchableOpacity>
       </View>
