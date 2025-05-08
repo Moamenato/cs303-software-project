@@ -11,7 +11,7 @@ export default function Footer() {
       <View style={styles.newIconContainer}>
         <TouchableOpacity
           style={styles.iconButton}
-          onPress={() => router.replace("/")}
+          onPress={() => router.replace("/home")}
         >
           <Ionicons name="home" size={30} color="white" />
         </TouchableOpacity>

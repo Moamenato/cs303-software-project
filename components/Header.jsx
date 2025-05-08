@@ -1,63 +1,79 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
-import { useNavigation } from "@react-navigation/native";
+import {
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+  StyleSheet,
+  SafeAreaView,
+} from "react-native";
+import { useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { FontAwesome5 } from "@expo/vector-icons";
 import SearchBar from "./SearchBar.jsx";
+import { useAuth } from "../context/AuthContext";
 
 export default function Header() {
-  const navigation = useNavigation();
+  const router = useRouter();
+  const { currentUser, logout } = useAuth();
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const loadUser = async () => {
-      const storedUser = await AsyncStorage.getItem("user");
-      if (storedUser) setUser(JSON.parse(storedUser));
-    };
-    loadUser();
-  }, []);
+    if (currentUser) {
+      setUser(currentUser);
+    } else {
+      const loadUser = async () => {
+        const storedUser = await AsyncStorage.getItem("user");
+        if (storedUser) setUser(JSON.parse(storedUser));
+      };
+      loadUser();
+    }
+  }, [currentUser]);
 
   const handleLogout = async () => {
-    await AsyncStorage.removeItem("user");
-    setUser(null);
-    navigation.reset({
-      index: 0,
-      routes: [{ name: "Login" }],
-    });
+    try {
+      await logout();
+      setUser(null);
+
+      router.replace("/");
+      router.canGoBack() && router.back();
+
+      router.navigate("/");
+      while (router.canGoBack()) {
+        router.back();
+      }
+    } catch (error) {
+      console.error("Logout error:", error);
+    }
   };
 
   return (
-    <View style={styles.header}>
-      <View style={styles.container}>
-        <View style={styles.left}>
-          <Image
-            source={require("../assets/logo.jpg")}
-            style={styles.logo}
-            resizeMode="contain"
-          />
-        </View>
-
-        <View style={styles.searchWrapper}>
-          <SearchBar placeholder="Search here..." caseSensitive={false} />
-        </View>
-
-        {user && (
-          <View style={styles.auth}>
-            <TouchableOpacity
-              style={styles.authBtn}
-              onPress={() => navigation.navigate("Profile")}
-            >
-              <FontAwesome5 name="user" style={styles.icon} />
-              <Text style={styles.authText}>{user.name || "Profile"}</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.authBtn} onPress={handleLogout}>
-              <FontAwesome5 name="sign-out-alt" style={styles.icon} />
-              <Text style={styles.authText}>Logout</Text>
-            </TouchableOpacity>
+    <SafeAreaView style={styles.screen}>
+      <View style={styles.header}>
+        <View style={styles.container}>
+          <View style={styles.left}>
+            <Image
+              source={require("../assets/logo.jpg")}
+              style={styles.logo}
+              resizeMode="contain"
+            />
           </View>
-        )}
+
+          <View style={styles.searchWrapper}>
+            <SearchBar placeholder="Search here..." caseSensitive={false} />
+          </View>
+
+          {user && (
+            <View style={styles.auth}>
+              <TouchableOpacity style={styles.authBtn} onPress={handleLogout}>
+                <FontAwesome5 name="sign-out-alt" style={styles.icon} />
+                <Text style={styles.authText}>Logout</Text>
+              </TouchableOpacity>
+            </View>
+          )}
+        </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 

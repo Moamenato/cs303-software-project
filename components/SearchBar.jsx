@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { View, TextInput, FlatList, Text, StyleSheet } from "react-native";
-import { db } from "../firebaseConfig";
+import { db } from "../firebase/index";
 import { collection, getDocs } from "firebase/firestore";
 
 const SearchBar = ({ placeholder }) => {
@@ -22,7 +22,7 @@ const SearchBar = ({ placeholder }) => {
 
   useEffect(() => {
     if (searchText === "") {
-      setFilteredItems(items);
+      setFilteredItems([]);
     } else {
       const filtered = items.filter((item) =>
         item.title.toLowerCase().includes(searchText.toLowerCase())

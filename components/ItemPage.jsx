@@ -15,8 +15,8 @@ import {
   query,
   where,
   getDocs,
-} from "../firebaseConfig";
-import FeedbackReviews from "./FeedbackReviews"; // adjust path as needed
+} from "../firebase/index";
+import FeedbackReviews from "./FeedbackReviews";
 
 export default function ItemPage() {
   const { item } = useRoute().params;
