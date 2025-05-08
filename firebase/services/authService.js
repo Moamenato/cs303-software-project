@@ -17,7 +17,6 @@ export const hashPassword = (password) => {
   try {
     const salt = "auth-salt-2025";
     const hashedPassword = SHA256(password + salt).toString(Base64);
-    console.log(hashedPassword);
     return hashedPassword;
   } catch (error) {
     console.warn(
@@ -53,6 +52,9 @@ export const createUser = async (userData) => {
       id: docRef.id,
       email: userData.email,
       name: userData.name,
+      phone: "",
+      address: "",
+      photoURL: "",
     };
     await saveUserToLocalStorage(userForStorage);
 
@@ -84,6 +86,9 @@ export const loginUser = async (email, password) => {
       id: userDoc.id,
       email: userData.email,
       name: userData.name,
+      phone: userData.phone || "",
+      address: userData.address || "",
+      photoURL: userData.photoURL || "",
     };
 
     await saveUserToLocalStorage(userForStorage);
@@ -121,5 +126,40 @@ export const logoutUser = async () => {
   } catch (error) {
     console.error("Error logging out:", error);
     return false;
+  }
+};
+
+export const updateUserProfile = async (userId, profileData) => {
+  try {
+    const currentUser = await getUserFromLocalStorage();
+    
+    if (!currentUser || currentUser.id !== userId) {
+      return { success: false, error: "User not authenticated or ID mismatch" };
+    }
+
+    const userRef = doc(db, "users", userId);
+    
+    const updateData = {};
+    
+    if (profileData.name) updateData.name = profileData.name;
+    if (profileData.phone) updateData.phone = profileData.phone;
+    if (profileData.address) updateData.address = profileData.address;
+    if (profileData.photoURL) updateData.photoURL = profileData.photoURL;
+    
+    updateData.updatedAt = new Date().toISOString();
+    
+    await setDoc(userRef, updateData, { merge: true });
+    
+    const updatedUser = {
+      ...currentUser,
+      ...updateData
+    };
+    
+    await saveUserToLocalStorage(updatedUser);
+    
+    return { success: true, user: updatedUser };
+  } catch (error) {
+    console.error("Error updating user profile:", error);
+    return { success: false, error: error.message };
   }
 };

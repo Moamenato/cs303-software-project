@@ -1,7 +1,6 @@
 const admin = require("firebase-admin");
 const fs = require("fs");
 
-// Initialize Firebase Admin SDK
 const serviceAccount = require("../epichardware-d1a40-firebase-adminsdk-fbsvc-2dc80e839c.json");
 
 admin.initializeApp({
@@ -10,12 +9,9 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
-// Load JSON data
 const rawFeedbacks = JSON.parse(
   fs.readFileSync("../firebase/DB/feedbacks.json", "utf-8")
 );
-
-// Transform MongoDB document to Firestore format
 function transformFeedback(doc) {
   return {
     item: doc.item?.$oid,
@@ -26,7 +22,6 @@ function transformFeedback(doc) {
   };
 }
 
-// Upload to Firestore
 async function uploadFeedbacks() {
   for (const doc of rawFeedbacks) {
     const id = doc._id?.$oid;

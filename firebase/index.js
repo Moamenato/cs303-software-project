@@ -1,4 +1,4 @@
-import { db } from "./config";
+import { db, storage } from "./config";
 
 import {
   collection,
@@ -15,10 +15,16 @@ import {
   hashPassword,
   createUser,
   loginUser,
+  updateUserProfile,
   saveUserToLocalStorage,
   getUserFromLocalStorage,
   logoutUser,
 } from "./services/authService";
+
+import {
+  uploadProfileImage,
+  deleteProfileImage
+} from "./services/imgbbService";
 
 import {
   getUserCart,
@@ -28,10 +34,9 @@ import {
 } from "./services/cartService";
 
 export {
-  // Firebase config
   db,
+  storage,
 
-  // Firestore methods
   collection,
   getDocs,
   getDoc,
@@ -41,15 +46,16 @@ export {
   query,
   where,
 
-  // Auth service
   hashPassword,
   createUser,
   loginUser,
+  updateUserProfile,
   saveUserToLocalStorage,
   getUserFromLocalStorage,
+  
+  uploadProfileImage,
+  deleteProfileImage,
   logoutUser,
-
-  // Cart service
   getUserCart,
   addToCart,
   updateCartItemQuantity,

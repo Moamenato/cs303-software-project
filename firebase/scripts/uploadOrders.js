@@ -1,22 +1,17 @@
 const admin = require("firebase-admin");
 const fs = require("fs");
 
-// Load Firebase service account key
 const serviceAccount = require("../epichardware-d1a40-firebase-adminsdk-fbsvc-2dc80e839c.json");
 
-// Initialize Firebase
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
 
 const db = admin.firestore();
 
-// Load orders data (array of objects)
 const rawOrders = JSON.parse(
   fs.readFileSync("../firebase/DB/orders.json", "utf-8")
 );
-
-// Transform MongoDB-style docs to Firestore format
 function transformOrder(doc) {
   return {
     userId: doc.user?.$oid,
@@ -31,7 +26,6 @@ function transformOrder(doc) {
   };
 }
 
-// Upload to Firestore
 async function uploadOrders() {
   for (const doc of rawOrders) {
     const id = doc._id?.$oid;

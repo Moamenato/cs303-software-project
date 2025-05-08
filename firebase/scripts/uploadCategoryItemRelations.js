@@ -1,7 +1,6 @@
 const admin = require("firebase-admin");
 const fs = require("fs");
 
-// Initialize Firebase Admin SDK
 const serviceAccount = require("../epichardware-d1a40-firebase-adminsdk-fbsvc-2dc80e839c.json");
 
 admin.initializeApp({
@@ -10,12 +9,9 @@ admin.initializeApp({
 
 const db = admin.firestore();
 
-// Load JSON data
 const rawRelations = JSON.parse(
   fs.readFileSync("../firebase/DB/categoryitemrelations.json", "utf-8")
 );
-
-// Transform MongoDB document to Firestore format
 function transformRelation(doc) {
   return {
     category: doc.category?.$oid,
@@ -24,7 +20,6 @@ function transformRelation(doc) {
   };
 }
 
-// Upload to Firestore
 async function uploadRelations() {
   for (const doc of rawRelations) {
     const id = doc._id?.$oid;
