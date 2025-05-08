@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   backButton: {
-    marginTop: 20,
+    marginTop: 0,
     marginBottom: 12,
     alignSelf: "flex-start",
   },
@@ -248,7 +248,7 @@ const styles = StyleSheet.create({
   },
   price: {
     fontSize: 18,
-    color: "#F4CE14",
+    color: "black",
     fontWeight: "bold",
     marginBottom: 8,
   },
@@ -291,7 +291,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   addToCartButton: {
-    backgroundColor: "#4A6FFF",
+    backgroundColor: "#F4CE14",
     padding: 12,
     borderRadius: 8,
     alignItems: "center",

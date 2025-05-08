@@ -10,7 +10,6 @@ export default function Layout() {
   const _path = usePathname();
   const hideFooter =
     _path !== "/" && _path !== "/auth/login" && _path !== "/auth/register";
-  // console.log(usePathname());
   return (
     <AuthProvider>
       <SafeAreaProvider>

@@ -3,17 +3,17 @@ import {
   View,
   Image,
   StyleSheet,
-  TouchableOpacity,
   Dimensions,
   ScrollView,
-  Text,
+  useWindowDimensions,
 } from "react-native";
 
-const { width, height } = Dimensions.get("window");
+
 
 export default function ImageSlider({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollRef = useRef();
+  const { width, height } = useWindowDimensions();
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -35,18 +35,10 @@ export default function ImageSlider({ images }) {
     setCurrentIndex(newIndex);
   };
 
-  const prevSlide = () => {
-    const newIndex = (currentIndex - 1 + images.length) % images.length;
-    scrollToIndex(newIndex);
-  };
 
-  const nextSlide = () => {
-    const newIndex = (currentIndex + 1) % images.length;
-    scrollToIndex(newIndex);
-  };
 
   return (
-    <View style={styles.sliderContainer}>
+    <View style={[styles.sliderContainer, { width, height: height * 0.4 }]}>
       <ScrollView
         ref={scrollRef}
         horizontal
@@ -59,56 +51,52 @@ export default function ImageSlider({ images }) {
           <Image
             key={index}
             source={typeof image === "string" ? { uri: image } : image}
-            style={styles.image}
+            style={[styles.image, { width, height: height * 0.4 }]}
           />
         ))}
       </ScrollView>
-
-      <TouchableOpacity
-        style={[styles.navButton, styles.prev]}
-        onPress={prevSlide}
-      >
-        <Text style={styles.navText}>‹</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={[styles.navButton, styles.next]}
-        onPress={nextSlide}
-      >
-        <Text style={styles.navText}>›</Text>
-      </TouchableOpacity>
+      
+      <View style={styles.dotContainer}>
+        {images.map((_, index) => (
+          <View
+            key={index}
+            style={[
+              styles.dot,
+              index === currentIndex && styles.activeDot
+            ]}
+          />
+        ))}
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   sliderContainer: {
-    width,
-    height: height * 0.4,
     position: "relative",
     overflow: "hidden",
   },
   image: {
-    width,
-    height: height * 0.4,
     resizeMode: "cover",
   },
-  navButton: {
-    position: "absolute",
-    backgroundColor: "rgba(73, 94, 87, 0.7)",
-    padding: 10,
-    borderRadius: 30,
-    zIndex: 1,
-    top: "45%",
+  dotContainer: {
+    position: 'absolute',
+    bottom: 20,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    width: '100%',
   },
-  prev: {
-    left: 10,
+  dot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: 'rgba(255, 255, 255, 0.6)',
+    marginHorizontal: 4,
   },
-  next: {
-    right: 10,
-  },
-  navText: {
-    color: "#F4CE14",
-    fontSize: 30,
-    fontWeight: "bold",
-  },
+  activeDot: {
+    backgroundColor: '#F4CE14',
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+  }
 });

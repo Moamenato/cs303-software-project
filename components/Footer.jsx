@@ -18,7 +18,7 @@ export default function Footer() {
 
         <TouchableOpacity
           style={styles.iconButton}
-          onPress={() => router.replace("/profile")}
+          onPress={() => router.replace("/auth/profile")}
         >
           <Ionicons name="person" size={30} color="white" />
         </TouchableOpacity>

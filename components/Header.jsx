@@ -86,6 +86,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 5,
     elevation: 3,
+    zIndex: 1000,
   },
   container: {
     height: 80,

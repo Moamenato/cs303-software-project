@@ -229,12 +229,7 @@ const CartComponent = () => {
     <View style={styles.emptyCart}>
       <Ionicons name="cart-outline" size={80} color="#ccc" />
       <Text style={styles.emptyCartText}>Your cart is empty</Text>
-      <TouchableOpacity
-        style={styles.shopButton}
-        onPress={() => router.push("/home")}
-      >
-        <Text style={styles.shopButtonText}>Shop Now</Text>
-      </TouchableOpacity>
+
     </View>
   );
 

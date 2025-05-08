@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { View, TextInput, FlatList, Text, StyleSheet } from "react-native";
+import {
+  View,
+  TextInput,
+  FlatList,
+  Text,
+  StyleSheet,
+  Pressable,
+  TouchableWithoutFeedback,
+  ScrollView
+} from "react-native";
+import { useRouter } from "expo-router";
 import { db } from "../firebase/index";
 import { collection, getDocs } from "firebase/firestore";
 
@@ -8,11 +18,15 @@ const SearchBar = ({ placeholder }) => {
   const [items, setItems] = useState([]);
   const [filteredItems, setFilteredItems] = useState([]);
   const [isFocused, setIsFocused] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const fetchItems = async () => {
       const querySnapshot = await getDocs(collection(db, "items"));
-      const itemList = querySnapshot.docs.map((doc) => doc.data());
+      const itemList = querySnapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
       setItems(itemList);
       setFilteredItems(itemList);
     };
@@ -31,6 +45,12 @@ const SearchBar = ({ placeholder }) => {
     }
   }, [searchText, items]);
 
+  const handleItemPress = (item) => {
+    router.push({ pathname: `/item/${item.id}`, params: { ...item } })
+    setIsFocused(false);
+    setSearchText("");
+  };
+
   return (
     <View style={styles.container}>
       <TextInput
@@ -43,18 +63,26 @@ const SearchBar = ({ placeholder }) => {
       />
 
       {isFocused && filteredItems.length > 0 && (
-        <View style={styles.resultsContainer}>
-          <FlatList
-            data={filteredItems}
-            keyExtractor={(item, index) => index.toString()}
-            renderItem={({ item }) => (
-              <View style={styles.itemContainer}>
-                <Text style={styles.itemText}>{item.title}</Text>
-              </View>
-            )}
-            style={styles.resultsList}
-          />
-        </View>
+        <TouchableWithoutFeedback onPress={() => {}} style={styles.overlay}>
+          <View style={styles.resultsContainer}>
+            <ScrollView
+              style={styles.scrollView}
+              nestedScrollEnabled={true}
+              contentContainerStyle={styles.scrollViewContent}
+              keyboardShouldPersistTaps="handled"
+            >
+              {filteredItems.map((item) => (
+                <Pressable
+                  key={item.id}
+                  style={styles.itemContainer}
+                  onPress={() => handleItemPress(item)}
+                >
+                  <Text style={styles.itemText}>{item.title}</Text>
+                </Pressable>
+              ))}
+            </ScrollView>
+          </View>
+        </TouchableWithoutFeedback>
       )}
     </View>
   );
@@ -63,7 +91,7 @@ const SearchBar = ({ placeholder }) => {
 const styles = StyleSheet.create({
   container: {
     position: "relative",
-    zIndex: 100,
+    zIndex: 1000,
   },
   searchBar: {
     height: 40,
@@ -71,6 +99,14 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 8,
     paddingLeft: 10,
+  },
+  overlay: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 1000,
   },
   resultsContainer: {
     position: "absolute",
@@ -87,9 +123,14 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
+    zIndex: 1000,
   },
-  resultsList: {
+  scrollView: {
+    maxHeight: 298,
     paddingHorizontal: 10,
+  },
+  scrollViewContent: {
+    flexGrow: 1,
   },
   itemContainer: {
     padding: 10,

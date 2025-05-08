@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, StyleSheet, ScrollView } from "react-native";
+import { View, StyleSheet, ScrollView, BackHandler, Platform, useWindowDimensions, StatusBar } from "react-native";
 import { db, collection, getDocs } from "../firebase/index";
 import ImageSlider from "../components/ImageSlider";
 import SectionHeader from "../components/SectionHeader";
@@ -15,6 +15,12 @@ const images = [
 
 export default function HomePage() {
   const [products, setProducts] = useState([]);
+  const { width, height } = useWindowDimensions();
+  const [isPortrait, setIsPortrait] = useState(height > width);
+  
+  useEffect(() => {
+    setIsPortrait(height > width);
+  }, [width, height]);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -34,12 +40,28 @@ export default function HomePage() {
     fetchProducts();
   }, []);
 
+  useEffect(() => {
+    const backAction = () => {
+      return true;
+    };
+
+    if (Platform.OS === 'android') {
+      const backHandler = BackHandler.addEventListener(
+        'hardwareBackPress',
+        backAction
+      );
+
+      return () => backHandler.remove();
+    }
+  }, []);
+
   return (
     <SafeAreaView style={styles.screen}>
+      <StatusBar barStyle="dark-content" backgroundColor="#fff" />
       <Header />
       <ScrollView contentContainerStyle={styles.container}>
         <ImageSlider images={images} />
-        <View style={styles.section}>
+        <View style={[styles.section, isPortrait ? styles.sectionPortrait : styles.sectionLandscape]}>
           <SectionHeader heading="Featured Products" />
           <ProductSwiper products={products} />
         </View>
@@ -58,6 +80,14 @@ const styles = StyleSheet.create({
   },
   section: {
     marginTop: 20,
+  },
+  sectionPortrait: {
     paddingHorizontal: 16,
+  },
+  sectionLandscape: {
+    paddingHorizontal: 24,
+    maxWidth: 1200,
+    alignSelf: 'center',
+    width: '100%',
   },
 });
