@@ -1,4 +1,3 @@
-// CategoryItemsScreen (dynamic route)
 import { Ionicons } from "@expo/vector-icons";
 import React, { useEffect, useState } from "react";
 import {
@@ -16,7 +15,7 @@ import {
   query,
   where,
   getDocs,
-} from "../../firebaseConfig";
+} from "../../firebase/index";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import ItemCard from "../../components/ItemCard";
 

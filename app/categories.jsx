@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from "react-native";
-import { db, collection, getDocs } from "../firebaseConfig";
+import { db, collection, getDocs } from "../firebase/index";
 import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -41,7 +41,7 @@ export default function CategoriesScreen() {
     <View style={styles.screen}>
       <View style={styles.header}>
         <TouchableOpacity
-          onPress={() => router.replace("/")}
+          onPress={() => router.replace("/home")}
           style={styles.backButton}
         >
           <Ionicons name="arrow-back" size={24} color="#495E57" />

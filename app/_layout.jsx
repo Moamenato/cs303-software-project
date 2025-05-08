@@ -1,23 +1,30 @@
 import React from "react";
-import { Stack } from "expo-router";
+import { Stack, usePathname } from "expo-router";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { SafeAreaView, View, StyleSheet } from "react-native";
-import { StatusBar } from "expo-status-bar"; // ✅ Correct StatusBar
+import { StatusBar } from "expo-status-bar";
 import Footer from "../components/Footer";
+import { AuthProvider } from "../context/AuthContext";
 
 export default function Layout() {
+  const _path = usePathname();
+  const hideFooter =
+    _path !== "/" && _path !== "/auth/login" && _path !== "/auth/register";
+  // console.log(usePathname());
   return (
-    <SafeAreaProvider>
-      <SafeAreaView style={styles.safeAreaContainer}>
-        <View style={styles.wrapper}>
-          <View style={styles.contentContainer}>
-            <Stack screenOptions={{ headerShown: false }} />
+    <AuthProvider>
+      <SafeAreaProvider>
+        <SafeAreaView style={styles.safeAreaContainer}>
+          <View style={styles.wrapper}>
+            <View style={styles.contentContainer}>
+              <Stack screenOptions={{ headerShown: false }} />
+            </View>
+            {hideFooter && <Footer />}
           </View>
-          <Footer />
-        </View>
-        <StatusBar style="dark" />
-      </SafeAreaView>
-    </SafeAreaProvider>
+          <StatusBar style="dark" />
+        </SafeAreaView>
+      </SafeAreaProvider>
+    </AuthProvider>
   );
 }
 

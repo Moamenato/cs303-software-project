@@ -6,6 +6,11 @@ import {
   ScrollView,
   ActivityIndicator,
   TouchableOpacity,
+  Alert,
+  ToastAndroid,
+  Platform,
+  SafeAreaView,
+  StatusBar,
 } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import {
@@ -16,17 +21,23 @@ import {
   query,
   where,
   getDocs,
-} from "../../firebaseConfig";
+  addToCart,
+} from "../../firebase/index";
+import { useAuth } from "../../context/AuthContext";
 import FeedbackReviews from "../../components/FeedbackReviews";
 import { Ionicons } from "@expo/vector-icons";
+import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 
 export default function ItemPage() {
   const router = useRouter();
   const params = useLocalSearchParams();
   const item = params;
+  const { currentUser } = useAuth();
 
   const [feedbacks, setFeedbacks] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [quantity, setQuantity] = useState(1);
+  const [addingToCart, setAddingToCart] = useState(false);
 
   useEffect(() => {
     const loadFeedback = async () => {
@@ -62,53 +73,156 @@ export default function ItemPage() {
     loadFeedback();
   }, [item]);
 
+  const handleAddToCart = async () => {
+    if (!currentUser) {
+      Alert.alert(
+        "Login Required",
+        "You need to login to add items to your cart",
+        [
+          { text: "Cancel", style: "cancel" },
+          { text: "Login", onPress: () => router.push("/auth/login") },
+        ]
+      );
+      return;
+    }
+
+    if (item.stock <= 0) {
+      Alert.alert("Out of Stock", "This item is currently out of stock");
+      return;
+    }
+
+    try {
+      setAddingToCart(true);
+      const result = await addToCart(currentUser.id, item.id, quantity);
+
+      if (result.success) {
+        if (Platform.OS === "android") {
+          ToastAndroid.show("Added to cart!", ToastAndroid.SHORT);
+        } else {
+          Alert.alert("Success", "Item added to cart!");
+        }
+      } else {
+        Alert.alert("Error", result.error || "Failed to add item to cart");
+      }
+    } catch (error) {
+      console.error("Error adding to cart:", error);
+      Alert.alert("Error", "An unexpected error occurred");
+    } finally {
+      setAddingToCart(false);
+    }
+  };
+
+  const increaseQuantity = () => {
+    if (quantity < item.stock) {
+      setQuantity(quantity + 1);
+    }
+  };
+
+  const decreaseQuantity = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      {/* Back Button */}
-      <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
-        <Ionicons name="arrow-back" size={24} color="#495E57" />
-      </TouchableOpacity>
-
-      <View style={styles.section}>
-        <Text style={styles.title}>{item.title}</Text>
-        <Text style={styles.description}>{item.description}</Text>
-        <Text style={styles.price}>Price: ${item.price}</Text>
-        <Text
-          style={[
-            styles.stock,
-            item.stock > 0 ? styles.inStock : styles.outOfStock,
-          ]}
+    <SafeAreaView style={styles.safeArea}>
+      <ExpoStatusBar style="dark" />
+      <ScrollView contentContainerStyle={styles.container}>
+        <TouchableOpacity
+          onPress={() => router.back()}
+          style={styles.backButton}
         >
-          {item.stock > 0 ? `In Stock (${item.stock})` : "Out of Stock"}
-        </Text>
-      </View>
+          <Ionicons name="arrow-back" size={24} color="#495E57" />
+        </TouchableOpacity>
 
-      <View style={styles.section}>
-        <Text style={styles.tagHeader}>Tags:</Text>
-        {Array.isArray(item.tags) && item.tags.length > 0 ? (
-          item.tags.map((tag, index) => (
-            <Text key={index} style={styles.tag}>
-              • {tag}
-            </Text>
-          ))
-        ) : (
-          <Text style={styles.tag}>No tags available</Text>
-        )}
-      </View>
+        <View style={styles.section}>
+          <Text style={styles.title}>{item.title}</Text>
+          <Text style={styles.description}>{item.description}</Text>
+          <Text style={styles.price}>Price: ${item.price}</Text>
+          <Text
+            style={[
+              styles.stock,
+              item.stock > 0 ? styles.inStock : styles.outOfStock,
+            ]}
+          >
+            {item.stock > 0 ? `In Stock (${item.stock})` : "Out of Stock"}
+          </Text>
 
-      <View style={styles.section}>
-        <Text style={styles.feedbackHeader}>User Reviews:</Text>
-        {loading ? (
-          <ActivityIndicator size="large" color="#000" />
-        ) : (
-          <FeedbackReviews feedbacks={feedbacks} />
-        )}
-      </View>
-    </ScrollView>
+          {item.stock > 0 && (
+            <View style={styles.cartSection}>
+              <View style={styles.quantitySelector}>
+                <TouchableOpacity
+                  onPress={decreaseQuantity}
+                  style={styles.quantityButton}
+                  disabled={quantity <= 1}
+                >
+                  <Text style={styles.quantityButtonText}>-</Text>
+                </TouchableOpacity>
+
+                <Text style={styles.quantityText}>{quantity}</Text>
+
+                <TouchableOpacity
+                  onPress={increaseQuantity}
+                  style={styles.quantityButton}
+                  disabled={quantity >= item.stock}
+                >
+                  <Text style={styles.quantityButtonText}>+</Text>
+                </TouchableOpacity>
+              </View>
+
+              <TouchableOpacity
+                style={styles.addToCartButton}
+                onPress={handleAddToCart}
+                disabled={addingToCart}
+              >
+                {addingToCart ? (
+                  <ActivityIndicator color="#fff" size="small" />
+                ) : (
+                  <Text style={styles.addToCartText}>Add to Cart</Text>
+                )}
+              </TouchableOpacity>
+            </View>
+          )}
+        </View>
+
+        <View style={styles.section}>
+          <Text style={styles.tagHeader}>Tags:</Text>
+          {item.tags && typeof item.tags === "string" ? (
+            item.tags.split(",").map((tag, index) => (
+              <Text key={index} style={styles.tag}>
+                • {tag.trim()}
+              </Text>
+            ))
+          ) : Array.isArray(item.tags) && item.tags.length > 0 ? (
+            item.tags.map((tag, index) => (
+              <Text key={index} style={styles.tag}>
+                • {tag}
+              </Text>
+            ))
+          ) : (
+            <Text style={styles.tag}>No tags available</Text>
+          )}
+        </View>
+
+        <View style={styles.section}>
+          <Text style={styles.feedbackHeader}>User Reviews:</Text>
+          {loading ? (
+            <ActivityIndicator size="large" color="#000" />
+          ) : (
+            <FeedbackReviews feedbacks={feedbacks} />
+          )}
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: "#fff",
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+  },
   container: {
     padding: 16,
     backgroundColor: "#fff",
@@ -147,6 +261,46 @@ const styles = StyleSheet.create({
   },
   outOfStock: {
     color: "#dc3545",
+  },
+  cartSection: {
+    marginTop: 16,
+    marginBottom: 20,
+  },
+  quantitySelector: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: 12,
+  },
+  quantityButton: {
+    backgroundColor: "#f0f0f0",
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  quantityButtonText: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#333",
+  },
+  quantityText: {
+    fontSize: 16,
+    marginHorizontal: 16,
+    width: 30,
+    textAlign: "center",
+  },
+  addToCartButton: {
+    backgroundColor: "#4A6FFF",
+    padding: 12,
+    borderRadius: 8,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  addToCartText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "bold",
   },
   tagHeader: {
     fontSize: 18,
