@@ -1,10 +1,13 @@
 import React from "react";
-import { View, TouchableOpacity, StyleSheet } from "react-native";
+import { View, TouchableOpacity, StyleSheet, Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { FontAwesome5 } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
+import { useAuth } from "../context/AuthContext";
 
 export default function Footer() {
   const router = useRouter();
+  const { isAdmin } = useAuth();
 
   return (
     <View style={styles.footerContainer}>
@@ -23,12 +26,21 @@ export default function Footer() {
           <Ionicons name="person" size={30} color="white" />
         </TouchableOpacity>
 
-        <TouchableOpacity
-          style={styles.iconButton}
-          onPress={() => router.replace("/cart")}
-        >
-          <Ionicons name="cart" size={30} color="white" />
-        </TouchableOpacity>
+        {isAdmin ? (
+          <TouchableOpacity
+            style={styles.iconButton}
+            onPress={() => router.push("/admin")}
+          >
+            <FontAwesome5 name="shield-alt" size={24} color="white" />
+          </TouchableOpacity>
+        ) : (
+          <TouchableOpacity
+            style={styles.iconButton}
+            onPress={() => router.replace("/cart")}
+          >
+            <Ionicons name="cart" size={30} color="white" />
+          </TouchableOpacity>
+        )}
 
         <TouchableOpacity
           style={styles.iconButton}
@@ -60,5 +72,11 @@ const styles = StyleSheet.create({
   },
   iconButton: {
     padding: 10,
+    alignItems: "center",
+  },
+  buttonText: {
+    color: "white",
+    fontSize: 12,
+    marginTop: 2,
   },
 });

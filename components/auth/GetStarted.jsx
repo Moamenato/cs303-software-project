@@ -79,22 +79,23 @@ const styles = StyleSheet.create({
     gap: 15,
   },
   button: {
-    backgroundColor: "#4A6FFF",
+    backgroundColor: "#F4CE14",
     padding: 15,
     borderRadius: 10,
     alignItems: "center",
   },
   buttonText: {
-    color: "#fff",
+    color: "white",
     fontSize: 16,
     fontWeight: "bold",
   },
   registerButton: {
-    backgroundColor: "#fff",
+    backgroundColor: "#F5F7F8",
+    color: "#F5F7F8",
     borderWidth: 1,
-    borderColor: "#4A6FFF",
+    borderColor: "#F4CE14",
   },
   registerButtonText: {
-    color: "#4A6FFF",
+    color: "#F4CE14",
   },
 });

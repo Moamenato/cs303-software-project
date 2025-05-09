@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   StyleSheet,
   SafeAreaView,
+  Vibration,
 } from "react-native";
 import { useRouter } from "expo-router";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -32,17 +33,18 @@ export default function Header() {
 
   const handleLogout = async () => {
     try {
+      Vibration.vibrate(50);
+
       await logout();
       setUser(null);
-
       router.replace("/");
       router.canGoBack() && router.back();
-
       router.navigate("/");
       while (router.canGoBack()) {
         router.back();
       }
     } catch (error) {
+      Vibration.vibrate([50, 50, 50]);
       console.error("Logout error:", error);
     }
   };
@@ -78,6 +80,9 @@ export default function Header() {
 }
 
 const styles = StyleSheet.create({
+  screen: {
+    backgroundColor: "#F5F7F8",
+  },
   header: {
     width: "100%",
     backgroundColor: "#F5F7F8",
@@ -93,6 +98,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     paddingHorizontal: 10,
+    position: "relative",
   },
   left: {
     width: 60,
@@ -107,6 +113,8 @@ const styles = StyleSheet.create({
   searchWrapper: {
     flex: 1,
     marginHorizontal: 15,
+    position: "relative",
+    zIndex: 9999,
   },
   auth: {
     flexDirection: "row",
@@ -124,5 +132,8 @@ const styles = StyleSheet.create({
   icon: {
     fontSize: 20,
     color: "#495E57",
+  },
+  adminIcon: {
+    color: "#FF6B6B",
   },
 });

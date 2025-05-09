@@ -3,12 +3,9 @@ import {
   View,
   Image,
   StyleSheet,
-  Dimensions,
   ScrollView,
   useWindowDimensions,
 } from "react-native";
-
-
 
 export default function ImageSlider({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,8 +32,6 @@ export default function ImageSlider({ images }) {
     setCurrentIndex(newIndex);
   };
 
-
-
   return (
     <View style={[styles.sliderContainer, { width, height: height * 0.4 }]}>
       <ScrollView
@@ -55,15 +50,12 @@ export default function ImageSlider({ images }) {
           />
         ))}
       </ScrollView>
-      
+
       <View style={styles.dotContainer}>
         {images.map((_, index) => (
           <View
             key={index}
-            style={[
-              styles.dot,
-              index === currentIndex && styles.activeDot
-            ]}
+            style={[styles.dot, index === currentIndex && styles.activeDot]}
           />
         ))}
       </View>
@@ -80,23 +72,23 @@ const styles = StyleSheet.create({
     resizeMode: "cover",
   },
   dotContainer: {
-    position: 'absolute',
+    position: "absolute",
     bottom: 20,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    width: '100%',
+    flexDirection: "row",
+    justifyContent: "center",
+    width: "100%",
   },
   dot: {
     width: 8,
     height: 8,
     borderRadius: 4,
-    backgroundColor: 'rgba(255, 255, 255, 0.6)',
+    backgroundColor: "rgba(255, 255, 255, 0.6)",
     marginHorizontal: 4,
   },
   activeDot: {
-    backgroundColor: '#F4CE14',
+    backgroundColor: "#F4CE14",
     width: 10,
     height: 10,
     borderRadius: 5,
-  }
+  },
 });
