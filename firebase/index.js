@@ -6,6 +6,8 @@ import {
   getDoc,
   doc,
   addDoc,
+  updateDoc,
+  deleteDoc,
   setDoc,
   query,
   where,
@@ -19,6 +21,7 @@ import {
   saveUserToLocalStorage,
   getUserFromLocalStorage,
   logoutUser,
+  setUserRole,
 } from "./services/authService";
 
 import {
@@ -31,7 +34,16 @@ import {
   addToCart,
   updateCartItemQuantity,
   removeCartItem,
+  clearUserCart,
 } from "./services/cartService";
+
+import {
+  getItemFeedbacks,
+  getItemFeedbacksWithUserData,
+  addFeedback,
+  updateFeedback,
+  deleteFeedback
+} from "./services/feedbackService";
 
 export {
   db,
@@ -42,6 +54,8 @@ export {
   getDoc,
   doc,
   addDoc,
+  updateDoc,
+  deleteDoc,
   setDoc,
   query,
   where,
@@ -49,9 +63,10 @@ export {
   hashPassword,
   createUser,
   loginUser,
-  updateUserProfile,
   saveUserToLocalStorage,
   getUserFromLocalStorage,
+  updateUserProfile,
+  setUserRole,
   
   uploadProfileImage,
   deleteProfileImage,
@@ -60,4 +75,11 @@ export {
   addToCart,
   updateCartItemQuantity,
   removeCartItem,
+  clearUserCart,
+  
+  getItemFeedbacks,
+  getItemFeedbacksWithUserData,
+  addFeedback,
+  updateFeedback,
+  deleteFeedback,
 };

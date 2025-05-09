@@ -17,10 +17,12 @@ import {
   getUserCart,
   updateCartItemQuantity,
   removeCartItem,
+  clearUserCart,
   db,
   doc,
   getDoc,
 } from "../firebase/index";
+import { createOrder } from "../firebase/services/orderService";
 import { StatusBar } from "expo-status-bar";
 
 const CartComponent = () => {
@@ -31,6 +33,7 @@ const CartComponent = () => {
   const [cartItems, setCartItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [updating, setUpdating] = useState(false);
+  const [processing, setProcessing] = useState(false);
   const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
@@ -167,6 +170,55 @@ const CartComponent = () => {
     );
   };
 
+  const handleCheckout = async () => {
+    if (!currentUser || cartItems.length === 0) return;
+    
+    try {
+      setProcessing(true);
+      
+      // Format items for order creation
+      const orderItems = cartItems.map(item => ({
+        itemId: item.itemId,
+        price: item.itemData.price,
+        quantity: item.quantity,
+        status: "Pending"
+      }));
+      
+      // Create order object
+      const orderData = {
+        userId: currentUser.id,
+        items: orderItems,
+        totalAmount: totalPrice,
+        status: "Pending",
+        createdAt: new Date().toISOString()
+      };
+      
+      // Create the order
+      const result = await createOrder(orderData);
+      
+      if (result.success) {
+        // Clear the user's cart
+        const clearResult = await clearUserCart(currentUser.id);
+        
+        if (clearResult.success) {
+          // Show success message
+          Alert.alert("Order Placed", "Your order has been successfully placed!");
+          // Reload cart data (should be empty now)
+          await loadCartData();
+        } else {
+          Alert.alert("Warning", "Order was created but we couldn't clear your cart. Please try again later.");
+        }
+      } else {
+        Alert.alert("Error", result.error || "Failed to create order");
+      }
+    } catch (error) {
+      console.error("Error during checkout:", error);
+      Alert.alert("Error", "An unexpected error occurred during checkout");
+    } finally {
+      setProcessing(false);
+    }
+  };
+
   const renderCartItem = ({ item }) => (
     <View style={styles.cartItem}>
       <TouchableOpacity
@@ -279,8 +331,16 @@ const CartComponent = () => {
           <Text style={styles.totalPrice}>${totalPrice.toFixed(2)}</Text>
         </View>
 
-        <TouchableOpacity style={styles.checkoutButton}>
-          <Text style={styles.checkoutButtonText}>Proceed to Checkout</Text>
+        <TouchableOpacity 
+          style={[styles.checkoutButton, processing && styles.disabledButton]}
+          onPress={handleCheckout}
+          disabled={processing}
+        >
+          {processing ? (
+            <ActivityIndicator color="#fff" size="small" />
+          ) : (
+            <Text style={styles.checkoutButtonText}>Proceed to Checkout</Text>
+          )}
         </TouchableOpacity>
       </View>
     );
@@ -405,8 +465,13 @@ const styles = StyleSheet.create({
     padding: 16,
     borderRadius: 8,
     alignItems: "center",
+    justifyContent: "center",
     marginTop: 8,
     marginBottom: 70,
+    height: 56,
+  },
+  disabledButton: {
+    backgroundColor: "#a0a0a0",
   },
   checkoutButtonText: {
     color: "#fff",

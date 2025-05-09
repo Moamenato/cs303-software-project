@@ -43,6 +43,7 @@ export const createUser = async (userData) => {
       email: userData.email,
       name: userData.name,
       passwordHash: hashedPassword,
+      role: userData.role || 'user', // Add role field with default value 'user'
       createdAt: new Date().toISOString(),
     };
 
@@ -52,6 +53,7 @@ export const createUser = async (userData) => {
       id: docRef.id,
       email: userData.email,
       name: userData.name,
+      role: userData.role || 'user',
       phone: "",
       address: "",
       photoURL: "",
@@ -86,6 +88,7 @@ export const loginUser = async (email, password) => {
       id: userDoc.id,
       email: userData.email,
       name: userData.name,
+      role: userData.role || 'user',
       phone: userData.phone || "",
       address: userData.address || "",
       photoURL: userData.photoURL || "",
@@ -126,6 +129,28 @@ export const logoutUser = async () => {
   } catch (error) {
     console.error("Error logging out:", error);
     return false;
+  }
+};
+
+export const setUserRole = async (userId, role) => {
+  try {
+    const userRef = doc(db, "users", userId);
+    await setDoc(userRef, { role, updatedAt: new Date().toISOString() }, { merge: true });
+    
+    const currentUser = await getUserFromLocalStorage();
+    if (currentUser && currentUser.id === userId) {
+      const updatedUser = {
+        ...currentUser,
+        role
+      };
+      await saveUserToLocalStorage(updatedUser);
+      return { success: true, user: updatedUser };
+    }
+    
+    return { success: true };
+  } catch (error) {
+    console.error("Error updating user role:", error);
+    return { success: false, error: error.message };
   }
 };
 

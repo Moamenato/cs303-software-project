@@ -204,3 +204,45 @@ export const removeCartItem = async (userId, itemId) => {
     return { success: false, error: error.message };
   }
 };
+
+/**
+ * Clear all items from a user's cart
+ * @param {string} userId - The user ID whose cart should be cleared
+ * @returns {Promise<{success: boolean, error: string|null}>}
+ */
+export const clearUserCart = async (userId) => {
+  try {
+    if (!userId) {
+      return { success: false, error: "User not authenticated" };
+    }
+    
+    const { success, cart, error } = await getUserCart(userId);
+
+    if (!success) {
+      return { success: false, error };
+    }
+
+    if (!cart.id) {
+      return { success: true }; // No cart to clear, so operation is successful by default
+    }
+
+    // Set cart items to empty array
+    await setDoc(
+      doc(db, "carts", cart.id),
+      {
+        items: [],
+        updatedAt: new Date().toISOString(),
+      },
+      { merge: true }
+    );
+
+    return { 
+      success: true, 
+      message: "Cart cleared successfully",
+      cart: { ...cart, items: [] } 
+    };
+  } catch (error) {
+    console.error("Error clearing cart:", error);
+    return { success: false, error: error.message };
+  }
+};

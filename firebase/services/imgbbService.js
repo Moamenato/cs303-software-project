@@ -15,7 +15,8 @@ const logNetworkError = (error, context) => {
 };
 
 
-export const uploadProfileImage = async (imageFile, userId) => {
+// Helper function to upload any image to ImgBB
+export const uploadImage = async (imageFile, prefix = 'image') => {
   console.log("Starting image upload with ImgBB service...");
   try {
     if (!imageFile || !imageFile.uri) {
@@ -27,7 +28,7 @@ export const uploadProfileImage = async (imageFile, userId) => {
     
     const formData = new FormData();
 
-    const filename = imageFile.uri.split('/').pop() || `profile_${userId}_${Date.now()}.jpg`;
+    const filename = imageFile.uri.split('/').pop() || `${prefix}_${Date.now()}.jpg`;
     
     let type = 'image/jpeg';
     if (filename.toLowerCase().endsWith('.png')) type = 'image/png';
@@ -65,9 +66,19 @@ export const uploadProfileImage = async (imageFile, userId) => {
     }
   } catch (error) {
     console.error("Error uploading image to ImgBB:", error);
-    logNetworkError(error, 'uploadProfileImage');
+    logNetworkError(error, 'uploadImage');
     return { success: false, url: null, error: error.message };
   }
+};
+
+// Upload profile image (uses the generic uploadImage function)
+export const uploadProfileImage = async (imageFile, userId) => {
+  return uploadImage(imageFile, `profile_${userId}`);
+};
+
+// Upload product image (uses the generic uploadImage function)
+export const uploadProductImage = async (imageFile, productId) => {
+  return uploadImage(imageFile, `product_${productId || 'new'}`);
 };
 
 export const deleteProfileImage = async (imageUrl) => {

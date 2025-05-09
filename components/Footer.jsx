@@ -72,10 +72,10 @@ const styles = StyleSheet.create({
   },
   iconButton: {
     padding: 10,
-    alignItems: "center",
+    alignItems: 'center',
   },
   buttonText: {
-    color: "white",
+    color: 'white',
     fontSize: 12,
     marginTop: 2,
   },

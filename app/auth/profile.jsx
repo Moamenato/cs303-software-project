@@ -381,16 +381,6 @@ const ProfileComponent = () => {
               </View>
             )}
           </View>
-
-          <View style={styles.actionsSection}>
-            <TouchableOpacity
-              style={[styles.button, styles.logoutButton]}
-              onPress={handleLogout}
-            >
-              <MaterialIcons name="logout" size={24} color="#fff" />
-              <Text style={styles.buttonText}>Logout</Text>
-            </TouchableOpacity>
-          </View>
         </View>
       </ScrollView>
     </SafeAreaView>

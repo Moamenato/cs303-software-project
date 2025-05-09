@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: "#eee",
     backgroundColor: "#fff",
+    marginTop: 20,
   },
   backButton: {
     marginTop: 20,
